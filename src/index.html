@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TFF HQ</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    (function () {
+      const storageKey = 'dark-mode';
+      let useDark;
+      const storedTheme = localStorage.getItem(storageKey);
+
+      if (storedTheme !== null) {
+        useDark = storedTheme === 'true';
+      } else {
+        useDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      if (useDark) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
