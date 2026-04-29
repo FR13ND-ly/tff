@@ -1,0 +1,401 @@
+<div class="w-full flex flex-col gap-10 pb-12 animate-fade-in">
+
+    <div
+        class="relative w-full h-[280px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 dark:border-slate-800/80 bg-slate-900">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-900/30 via-slate-900 to-red-900/30"></div>
+        <div
+            class="absolute inset-0 bg-[url('/dice_championsip.webp')] bg-cover bg-center opacity-50 mix-blend-overlay">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-slate-900/80"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-orange-500/10 blur-[100px] pointer-events-none">
+        </div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full p-8 md:p-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="flex flex-col gap-2">
+                <span class="text-orange-400 font-bold tracking-widest text-sm uppercase">{{ pack().diceChampionship.tag
+                    }}</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight drop-shadow-lg">
+                    {{ pack().diceChampionship.title }}
+                </h1>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <div class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl px-6 py-3 text-center">
+                    <span class="block text-xl font-bold text-white">18:00 UTC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap gap-3 justify-center">
+        @for (edition of editions; track edition.id; let i = $index) {
+        <button (click)="selectEdition(i)" [class]="'px-6 py-3 rounded-xl font-bold text-sm border transition-colors ' +
+          (i === activeEditionIndex()
+            ? 'bg-orange-500/20 border-orange-500/40 text-orange-400'
+            : 'bg-slate-800/50 border-slate-700 text-slate-400 hover:text-slate-200 hover:border-slate-500')">
+            {{ edition.title }}
+        </button>
+        }
+    </div>
+
+    @if (activeEdition().isFinished) {
+    <section>
+        <div class="flex items-center gap-3 mb-6">
+            <div class="p-2 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 text-amber-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a3 3 0 0 0 3.375 3.375M9.497 13.5a3 3 0 0 1-3.375-3.375" />
+                </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-white">{{ pack().diceChampionship.podiumTitle }}</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+            @for (entry of podium(); track entry.rank) {
+            <div [class]="'order-' + (entry.rank === 1 ? '2 md:order-2' : entry.rank === 2 ? '1 md:order-1' : '3') + ' animate-slide-up'"
+                [style.animation-delay]="(entry.rank === 1 ? 0 : entry.rank === 2 ? 0.1 : 0.2) + 's'">
+                <div
+                    [class]="'border rounded-3xl p-6 relative overflow-hidden ' +
+            (entry.rank === 1 ? 'podium-1 gold-glow pt-10' : entry.rank === 2 ? 'podium-2 silver-glow' : 'podium-3 bronze-glow')">
+
+                    <div [class]="'absolute top-0 right-0 w-24 h-24 rounded-bl-[80px] pointer-events-none ' +
+              (entry.rank === 1 ? 'bg-amber-500/5' : entry.rank === 2 ? 'bg-slate-400/5' : 'bg-orange-500/5')"></div>
+
+                    @if (entry.rank === 1) {
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                        <span class="text-4xl animate-float inline-block">👑</span>
+                    </div>
+                    }
+
+                    <div class="text-center relative z-10">
+                        <div [class]="'mx-auto mb-4 rounded-2xl flex items-center justify-center shadow-lg ' +
+                (entry.rank === 1 ? 'w-20 h-20 bg-gradient-to-br from-amber-300 to-amber-600 ring-4 ring-amber-500/20' :
+                 entry.rank === 2 ? 'w-16 h-16 bg-gradient-to-br from-slate-300 to-slate-500' :
+                 'w-16 h-16 bg-gradient-to-br from-orange-300 to-orange-600')">
+                            <span
+                                [class]="'font-black ' + (entry.rank === 1 ? 'text-4xl text-amber-950' : 'text-3xl ' + (entry.rank === 2 ? 'text-slate-900' : 'text-orange-950'))">
+                                {{ entry.rank }}
+                            </span>
+                        </div>
+                        <div [class]="'text-xs font-bold uppercase tracking-widest mb-1 ' +
+                (entry.rank === 1 ? 'text-amber-400' : entry.rank === 2 ? 'text-slate-400' : 'text-orange-400')">
+                            {{ entry.label }}
+                        </div>
+                        <div class="text-xl font-black text-white">{{ entry.name }}</div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </section>
+}
+
+    <section class="bg-[#111318] border border-slate-800 rounded-3xl shadow-xl">
+        <div class="p-6 md:p-8 border-b border-slate-800 flex items-center gap-3">
+            <div class="p-2 bg-orange-500/10 rounded-xl border border-orange-500/20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 text-orange-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-white">{{ pack().diceChampionship.bracketTitle }}</h2>
+        </div>
+
+        <div class="overflow-x-auto p-6 md:p-8">
+            <div class="flex flex-row items-stretch gap-8 md:gap-12 min-w-max">
+
+                @for (round of activeEdition().rounds; track trackByRound($index, round); let roundIdx = $index) {
+                <div class="flex flex-col justify-around gap-6 min-w-[280px] md:min-w-[320px] relative">
+
+                    <div class="text-center">
+                        <h3
+                            class="text-xs font-black uppercase tracking-widest text-slate-500 bg-slate-900/80 py-2 rounded-xl border border-slate-800 inline-block px-6">
+                            {{ round.title }}
+                        </h3>
+                    </div>
+
+                    @for (match of round.matches; track trackByMatch($index, match)) {
+                    <div class="relative">
+                        @if (roundIdx < activeEdition().rounds.length - 1) { <div
+                            class="hidden md:block absolute top-1/2 -right-12 w-12 h-px bg-slate-700">
+                    </div>
+                    @if ($index % 2 === 0) {
+                    <div class="hidden md:block absolute -right-12 top-1/2 w-px bg-slate-700"
+                        [style.height]="'calc(100% + 24px)'"></div>
+                    }
+                    }
+
+                    <div
+                        class="flex flex-col bg-[#1a1d24] border border-slate-700/60 rounded-2xl overflow-hidden shadow-lg">
+
+                        <!-- Player 1 -->
+                        <div [class]="'flex items-center justify-between p-3 border-b border-slate-800 ' +
+                    (match.player1Wins > match.player2Wins ? 'bg-orange-50 dark:bg-orange-500/10' : '')">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-lg overflow-hidden shrink-0 bg-slate-800 border border-slate-700">
+                                    <img [src]="getPlayerAvatar(match.player1Id)" class="w-full h-full object-cover" />
+                                </div>
+                                <span [class]="'font-bold text-sm ' +
+                        (match.player1Wins > match.player2Wins ? 'text-orange-400' : 'text-slate-300')">
+                                    {{ getPlayerName(match.player1Id) }}
+                                </span>
+                                @if (match.player1Wins > match.player2Wins) {
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-4 h-4 text-orange-400">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                }
+                            </div>
+                            <div
+                                [class]="'px-2.5 py-1 rounded-md text-sm font-black ' +
+                      (match.player1Wins > match.player2Wins ? 'bg-orange-500/20 text-orange-400' : 'bg-slate-800 text-slate-500')">
+                                {{ match.player1Wins }}
+                            </div>
+                        </div>
+
+                        <!-- Player 2 -->
+                        <div [class]="'flex items-center justify-between p-3 ' +
+                    (match.player2Wins > match.player1Wins ? 'bg-orange-50 dark:bg-orange-500/10' : '')">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-lg overflow-hidden shrink-0 bg-slate-800 border border-slate-700">
+                                    <img [src]="getPlayerAvatar(match.player2Id)" class="w-full h-full object-cover" />
+                                </div>
+                                <span [class]="'font-bold text-sm ' +
+                        (match.player2Wins > match.player1Wins ? 'text-orange-400' : 'text-slate-300')">
+                                    {{ getPlayerName(match.player2Id) }}
+                                </span>
+                                @if (match.player2Wins > match.player1Wins) {
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-4 h-4 text-orange-400">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                }
+                            </div>
+                            <div
+                                [class]="'px-2.5 py-1 rounded-md text-sm font-black ' +
+                      (match.player2Wins > match.player1Wins ? 'bg-orange-500/20 text-orange-400' : 'bg-slate-800 text-slate-500')">
+                                {{ match.player2Wins }}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                }
+            </div>
+            }
+
+            <!-- Champion Card -->
+            @if (activeEdition().championId) {
+            <div class="flex flex-col justify-center gap-4 min-w-[200px] pl-4">
+                <div class="text-center">
+                    <span class="text-4xl drop-shadow-lg animate-float inline-block">🏆</span>
+                </div>
+                <div
+                    class="flex flex-col items-center bg-gradient-to-b from-amber-400 to-orange-600 p-1 rounded-2xl shadow-[0_0_30px_rgba(249,115,22,0.3)]">
+                    <div class="bg-[#111318] w-full p-5 rounded-xl flex flex-col items-center gap-3 text-center">
+                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-orange-400 bg-slate-800">
+                            <img [src]="getPlayerAvatar(activeEdition().championId)"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div>
+                            <span class="block text-lg font-black text-white">{{
+                                getPlayerName(activeEdition().championId) }}</span>
+                            <span class="block text-lg font-black text-white">{{
+                                getPlayerName(activeEdition().championId) }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+
+        </div>
+</div>
+</section>
+
+<!-- Standings -->
+<section class="bg-[#111318] border border-slate-800 rounded-3xl shadow-xl overflow-hidden">
+    <div class="p-6 md:p-8 border-b border-slate-800 flex items-center gap-3">
+        <div class="p-2 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+            </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-white">{{ pack().diceChampionship.standingsTitle }}</h2>
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="w-full text-left">
+            <thead>
+                <tr class="border-b border-slate-800 bg-slate-900/50">
+                    <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider w-16">{{
+                        pack().diceChampionship.table.rank }}</th>
+                    <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">{{
+                        pack().diceChampionship.table.player }}</th>
+                    <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider text-center">{{
+                        pack().diceChampionship.table.matches }}</th>
+                    <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider text-center">{{
+                        pack().diceChampionship.table.wins }}</th>
+                    <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider text-center">{{
+                        pack().diceChampionship.table.losses }}</th>
+                    <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider text-right">{{
+                        pack().diceChampionship.table.tiebreaks }}</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/50">
+                @for (player of standings(); track player.id; let i = $index) {
+                <tr class="hover:bg-slate-800/30 transition-colors">
+                    <td class="px-6 py-4">
+                        <span
+                            [class]="'font-black text-lg ' + (i === 0 ? 'text-amber-400' : i === 1 ? 'text-slate-300' : i === 2 ? 'text-orange-400' : 'text-slate-500')">
+                            {{ i + 1 }}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg overflow-hidden bg-slate-800 border border-slate-700">
+                                <img [src]="player.avatar || '/heroes/default.png'"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <span class="font-bold text-white">{{ player.name }}</span>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                        <span class="font-mono font-bold text-slate-300">{{ player.matches }}</span>
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                        <span class="font-mono font-bold text-emerald-400">{{ player.wins }}</span>
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                        <span class="font-mono font-bold text-red-400">{{ player.losses }}</span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                        <span class="font-mono font-bold text-orange-400">{{ player.diff }}</span>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+
+@if (activeEdition().losers && activeEdition().losers.length > 0) {
+<section class="bg-[#111318] border border-slate-800 rounded-3xl shadow-xl overflow-hidden">
+    <div class="p-6 md:p-8 border-b border-slate-800 flex items-center gap-3">
+        <div class="p-2 bg-red-500/10 rounded-xl border border-red-500/20">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6 text-red-400">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.182 16.318A4.486 4.486 0 0 0 12.016 15a4.486 4.486 0 0 0-3.198 1.318M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+            </svg>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold text-white">{{ pack().diceChampionship.losersTitle }}</h2>
+            <p class="text-slate-500 text-sm">{{ pack().diceChampionship.losersSubtitle }}</p>
+        </div>
+    </div>
+
+    <div class="p-6 md:p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            @for (loser of activeEdition().losers; track loser.playerId) {
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
+                <div
+                    class="w-12 h-12 rounded-xl overflow-hidden bg-slate-800 border border-slate-700 shrink-0 grayscale opacity-60">
+                    <img [src]="getPlayerAvatar(loser.playerId)" class="w-full h-full object-cover" />
+                </div>
+                <div class="min-w-0">
+                    <div class="font-bold text-slate-400 truncate">{{ getPlayerName(loser.playerId) }}</div>
+                    <div class="text-xs text-slate-600 italic truncate">"{{ loser.excuse }}"</div>
+                </div>
+                <span class="ml-auto text-xl shrink-0">🐔</span>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+}
+
+<!-- Info Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- How it works -->
+    <div class="bg-[#111318] border border-slate-800 rounded-3xl p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 rounded-bl-[100px]"></div>
+        <div class="flex items-center gap-3 mb-6">
+            <div class="p-2 bg-orange-500/10 rounded-xl border border-orange-500/20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 text-orange-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.82 1.508-2.316a7.5 7.5 0 1 0-7.516 0c.85.496 1.508 1.333 1.508 2.316V18" />
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">{{ pack().diceChampionship.howItWorksTitle }}</h3>
+        </div>
+        <ul class="space-y-3 relative z-10">
+            @for (rule of pack().diceChampionship.rules; track rule; let i = $index) {
+            <li class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800">
+                <span
+                    class="flex items-center justify-center w-6 h-6 rounded-full bg-orange-500/20 text-orange-400 text-xs font-bold shrink-0">{{
+                    i + 1 }}</span>
+                <span class="text-slate-300 text-sm font-medium">{{ rule }}</span>
+            </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Prizes & Consequences -->
+    <div class="bg-[#111318] border border-slate-800 rounded-3xl p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-bl-[100px]"></div>
+        <div class="flex items-center gap-3 mb-6">
+            <div class="p-2 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 text-amber-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.048 8.287 8.287 0 0 0 9 9.6a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">{{ pack().diceChampionship.prizesTitle }}</h3>
+        </div>
+        <div class="space-y-3 relative z-10">
+            <div
+                class="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-amber-500/10 to-transparent border border-amber-500/20">
+                <span class="text-2xl">🥇</span>
+                <div>
+                    <div class="text-white font-bold">1st Place</div>
+                    <div class="text-amber-400 text-sm font-medium">{{ pack().diceChampionship.prizes.first }}</div>
+                </div>
+            </div>
+            <div
+                class="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-slate-400/10 to-transparent border border-slate-400/20">
+                <span class="text-2xl">🥈</span>
+                <div>
+                    <div class="text-white font-bold">2nd Place</div>
+                    <div class="text-slate-400 text-sm font-medium">{{ pack().diceChampionship.prizes.second }}</div>
+                </div>
+            </div>
+            <div
+                class="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/20">
+                <span class="text-2xl">🥉</span>
+                <div>
+                    <div class="text-white font-bold">3rd Place</div>
+                    <div class="text-orange-400 text-sm font-medium">{{ pack().diceChampionship.prizes.third }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

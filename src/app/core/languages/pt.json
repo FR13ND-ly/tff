@@ -1,0 +1,522 @@
+{
+  "name": "PT",
+  "imageUrl": "",
+  "pack": {
+    "header": {
+      "bearTrap": "Armadilha do Urso",
+      "crazyJoe": "Joe Maluco",
+      "svs": "EvE",
+      "labyrinth": "Labirinto",
+      "diceChampionship": "Campeonato de Dados"
+    },
+    "footer": {
+      "questions": "Se tiver perguntas, ideias ou reclamações, pergunte a",
+      "copyright": "© 2026 TFF Alliance • Estado 2327 • Whiteout Survival"
+    },
+    "landing": {
+      "title": "Bem-vindo à nossa Grande Aliança!",
+      "discord": "Junte-se ao nosso Discord",
+      "events": {
+        "bearTrap": "Armadilha do Urso",
+        "crazyJoe": "Joe Maluco",
+        "svs": "Estado vs Estado",
+        "mercenaryBoss": "Chefe Mercenário",
+        "foundry": "Fundição",
+        "canyonClash": "Confronto do Canyon"
+      },
+      "labels": {
+        "legion1": "Legião 1",
+        "legion2": "Legião 2",
+        "biWeekly": "Quinzenal",
+        "tba": "A anunciar"
+      }
+    },
+    "bearTrap": {
+      "tag": "Guia do Evento",
+      "title": "Armadilha do Urso",
+      "sessions": {
+        "s1Title": "Sessão 1",
+        "s1Time": "01:00",
+        "s2Title": "Sessão 2",
+        "s2Time": "18:00",
+        "utc": "UTC"
+      },
+      "mechanics": {
+        "title": "Mecânicas",
+        "p1_1": "Cada herói possui habilidades especiais que concedem bônus a todo o ataque. No entanto, ",
+        "p1_bold": "apenas a habilidade do primeiro herói (Capitão)",
+        "p1_2": " se aplica ao ataque.",
+        "p2": "Os outros dois heróis não contribuem com suas habilidades de ataque, portanto escolha-os com base apenas na capacidade de tropas ou estatísticas passivas."
+      },
+      "join": {
+        "titlePart1": "Capitão ao ",
+        "titleHighlight": "PARTICIPAR",
+        "desc": "Melhores bônus de dano e letalidade para participar de ataques existentes. A ordem é priorizada da esquerda para a direita.",
+        "noHeroes1": "Se não tiver nenhum desses heróis disponível, envie suas tropas ",
+        "noHeroesBold": "sem nenhum herói",
+        "noHeroes2": "."
+      },
+      "start": {
+        "titlePart1": "Capitão ao ",
+        "titleHighlight": "INICIAR",
+        "desc": "Use esses heróis como capitão se estiver iniciando um ataque contra o urso."
+      },
+      "tips": {
+        "title": "Estratégia e Dicas",
+        "desc": "Maximize seus pontos e recompensas com eficiência.",
+        "list": [
+          {
+            "title": "Proporção de Tropas",
+            "desc": "O urso não mata tropas. Envie uma formação focada em dano: 10% Infantaria, 10% Lanceiros, 80% Atiradores."
+          },
+          {
+            "title": "Tempo do Ataque",
+            "desc": "Defina sempre seus ataques para 5 minutos para maximizar o número de golpes que sua equipe pode dar."
+          },
+          {
+            "title": "Auto-Participar",
+            "desc": "Desative o Auto-Participar se puder ficar online. A participação manual garante o envio do herói capitão correto."
+          },
+          {
+            "title": "Bônus de Território",
+            "desc": "Certifique-se de que sua cidade esteja no Território da Aliança para se beneficiar dos nossos bônus tecnológicos de aliança."
+          }
+        ]
+      }
+    },
+    "crazyJoe": {
+      "tag": "Evento de Defesa",
+      "title": "Joe Maluco",
+      "startsAt": "Começa às",
+      "tba": "A anunciar",
+      "generalRules": {
+        "title": "Regras Gerais",
+        "rules": [
+          "Envie PRIMEIRO TODAS as suas tropas de Infantaria para reforçar os membros da aliança que estão online.",
+          "Quando a Infantaria acabar, envie outros tipos de tropas (Lanceiros e Atiradores) para reforçar.",
+          "Distribua a defesa: não envie reforços para cidades que já têm mais de 250k tropas reforçadas.",
+          "Nunca use um Escudo de Paz! Joe Maluco ignora escudos.",
+          "Coloque seus melhores heróis defensivos na parede da Guarnição da sua própria cidade."
+        ]
+      },
+      "hqDefense": {
+        "title": "Regras específicas da Defesa do QG",
+        "labels": {
+          "maxTroops": "Tropas Máx.",
+          "ratio": "Proporção",
+          "captains": "Capitães Necessários"
+        },
+        "waves": [
+          {
+            "wave": "Onda 10 (Defesa do QG)",
+            "description": "Após a onda 9, faça o recall de suas tropas e envie sua marcha mais forte ao QG. Foque em Infantaria de alto HP para absorver e eliminar a onda.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          },
+          {
+            "wave": "Onda 20 (Defesa Final do QG)",
+            "description": "Após a onda 19, faça o recall novamente das tropas e corra ao QG. Mesma prioridade defensiva — Infantaria primeiro. Seu membro mais forte deve liderar a guarnição.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Estratégias Pro",
+        "desc": "Dicas avançadas para subir no ranking.",
+        "list": [
+          {
+            "title": "Sem Mortes Permanentes",
+            "desc": "Tropas derrotadas pelo Joe Maluco vão apenas para o hospital. Não há perdas permanentes."
+          },
+          {
+            "title": "Maximizar Pontos",
+            "desc": "Você ganha pontos por defender sua própria cidade E por defender aliados. Reforçar outros é o segredo dos primeiros lugares."
+          },
+          {
+            "title": "Cidade em Chamas",
+            "desc": "Se você falhar na defesa duas vezes, sua cidade vai queimar e Joe vai ignorá-lo pelo resto do evento. Se isso acontecer, envie TODAS as suas tropas para reforçar outros!"
+          },
+          {
+            "title": "Isca de Cidade Vazia",
+            "desc": "Jogadores de alto nível frequentemente esvaziam completamente suas cidades para maximizar os pontos de reforço em outros lugares."
+          }
+        ]
+      }
+    },
+    "svs": {
+      "tag": "Evento Inter-Servidor",
+      "title": "Estado vs Estado",
+      "durationLabel": "Duração",
+      "durationValue": "6 Dias",
+      "prepRules": {
+        "title": "Regras da Fase de Preparação",
+        "rules": [
+          "Acumular é a regra de ouro. Guarde Cristais de Fogo, aceleradores e widgets exclusivamente para seus dias designados.",
+          "O timing é tudo. Verifique cuidadosamente o horário de reset do servidor. Usar itens mesmo um minuto antes significa zero pontos.",
+          "Sempre mire no último marco diário para recompensas pessoais, mas pare de gastar ao atingi-lo para poupar para o próximo EvE.",
+          "Tarefas Opcionais (🆗) dão pontos, mas são menos eficientes. Faça-as apenas se estiver mirando um ranking Top 100 geral."
+        ]
+      },
+      "battleRules": {
+        "title": "Regras da Fase de Batalha",
+        "rules": [
+          "Mantenha um Escudo de Paz de 24h a todo momento, a menos que esteja participando ativamente de ataques ao Castelo do Fogo Solar ou torretas.",
+          "Não colete recursos no estado inimigo. Jogadores inimigos caçarão coletores por pontos de abate fáceis.",
+          "Siga as chamadas de alvo dos R5/R4. Não inicie ataques solo aleatórios. Junte-se a ataques coordenados para garantir os objetivos.",
+          "Cure em lotes. Durante combates intensos, cure suas tropas em pequenos lotes (30-60 min) para usar ajudas da aliança e economizar aceleradores."
+        ]
+      },
+      "matrix": {
+        "title": "Matriz de Melhorias",
+        "desc": "Distribuição diária de pontos para máxima eficiência.",
+        "focus": "Foco",
+        "optional": "Opcional",
+        "headers": {
+          "category": "Categoria",
+          "d1": "Dia 1",
+          "d2": "Dia 2",
+          "d3": "Dia 3",
+          "d4": "Dia 4",
+          "d5": "Dia 5"
+        },
+        "tasks": {
+          "fc": "Cristais de Fogo (CF)",
+          "construction": "Construção",
+          "research": "Pesquisa / Amanhecer",
+          "sigils": "Sigilos",
+          "fcShards": "Fragmentos de CF",
+          "gather": "Coletar Recursos",
+          "wheel": "Roda da Sorte",
+          "heroShards": "Fragmentos de Herói",
+          "beasts": "Terror / Bestas",
+          "troops": "Treinar Tropas",
+          "charms": "Amuletos",
+          "widgets": "Widgets / Essência",
+          "heroGears": "Equipamento de Herói",
+          "chiefGear": "Equipamento de Chefe",
+          "pets": "Animais (Avanço/Refinamento)"
+        }
+      }
+    },
+    "notFound": {
+      "title": "404",
+      "subtitle": "Espera... Unicórnios na Tundra?",
+      "desc": "Você se aventurou longe demais na nevasca, Chefe. As coordenadas estão erradas, não há recursos aqui, e a hipotermia pode estar fazendo você alucinar.",
+      "button": "Voltar ao Quartel General"
+    },
+    "labyrinth": {
+      "tag": "World of Soldiers · Evento",
+      "title": "Labirinto",
+      "standardLevels": {
+        "title": "Níveis Padrão — Proporções",
+        "orLabel": "ou",
+        "levels": [
+          {
+            "name": "Caverna dos Monstros",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "30% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Mina de Pedra Brilhante",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "50% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Laboratório Terrestre",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "60% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Forja Escura",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "45% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "40% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "40% Ati",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "marchLevels": {
+        "title": "Terra dos Valentes & Coração de Gaia",
+        "description": "Estes dois níveis permitem até 3 marchas. Siga esta ordem para resultados muito melhores.",
+        "marches": [
+          {
+            "number": 1,
+            "label": "Primeira marcha",
+            "heroes": "Melhor Infantaria + Melhor Lanceiro + Greg (sem equipamento)",
+            "badgeClass": "bg-violet-200 dark:bg-violet-500/20 text-violet-700 dark:text-violet-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "60% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "40% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "0% Ati",
+                "class": "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "label": "Segunda marcha",
+            "heroes": "2ª Infantaria + Mia (sem equipamento) + Melhor Atirador",
+            "badgeClass": "bg-emerald-200 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "54% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "3% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "43% Ati",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "label": "Terceira marcha",
+            "heroes": "Melhores heróis restantes",
+            "badgeClass": "bg-amber-200 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "50% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "20% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "30% Ati",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "title": "Dicas Principais",
+        "desc": "Notas estratégicas para o Labirinto",
+        "list": [
+          {
+            "title": "Sem equipamento em Greg e Mia",
+            "desc": "Envie Greg e Mia sem nenhum equipamento em suas respectivas marchas."
+          },
+          {
+            "title": "A ordem das marchas é importante",
+            "desc": "Para níveis de 3 marchas, preencha sempre as marchas na ordem 1 → 2 → 3 para máxima eficiência."
+          },
+          {
+            "title": "Melhores heróis primeiro",
+            "desc": "Sempre atribua seus heróis de Infantaria e Lanceiros mais fortes à primeira marcha."
+          },
+          {
+            "title": "Proporções múltiplas",
+            "desc": "Quando duas ou mais proporções são listadas, escolha com base nas tropas disponíveis."
+          }
+        ]
+      }
+    },
+    "diceChampionship": {
+      "tag": "Chaveamento do Torneio",
+      "title": "Campeonato de Dados",
+      "dateLabel": "Data",
+      "podiumTitle": "Pódio",
+      "bracketTitle": "Chaveamento do Torneio",
+      "standingsTitle": "Classificação",
+      "howItWorksTitle": "Como funciona?",
+      "rules": [
+        "O vencedor ganha respeito e o direito de renomear o perdedor.",
+        "Todas as pontuações são atualizadas manualmente pela liderança da aliança.",
+        "Os desempates determinam o verdadeiro campeão."
+      ],
+      "prizesTitle": "Prêmios e Consequências",
+      "prizes": {
+        "first": "O vencedor ganha RESPEITO e pode renomear o perdedor",
+        "second": "O finalista recebe um forte aperto de mão",
+        "third": "O semifinalista ganha assentos na primeira fila para o próximo torneio"
+      },
+      "champion": "Campeão",
+      "finalist": "Finalista",
+      "semifinalist": "Semifinalista",
+      "losersTitle": "Salão da Vergonha",
+      "losersSubtitle": "Tinham coisas melhores para fazer... aparentemente",
+      "table": {
+        "rank": "#",
+        "player": "Jogador",
+        "matches": "Partidas",
+        "wins": "Vitórias",
+        "losses": "Derrotas",
+        "tiebreaks": "Desempates Vencidos"
+      }
+    }
+  }
+}

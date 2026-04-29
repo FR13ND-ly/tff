@@ -1,0 +1,522 @@
+{
+  "name": "IT",
+  "imageUrl": "",
+  "pack": {
+    "header": {
+      "bearTrap": "Trappola per Orsi",
+      "crazyJoe": "Joe il Pazzo",
+      "svs": "SvS",
+      "labyrinth": "Labirinto",
+      "diceChampionship": "Campionato di Dadi"
+    },
+    "footer": {
+      "questions": "Se hai domande, idee o reclami, chiedi a",
+      "copyright": "© 2026 TFF Alliance • Stato 2327 • Whiteout Survival"
+    },
+    "landing": {
+      "title": "Benvenuto nella nostra Grande Alleanza!",
+      "discord": "Unisciti al nostro Discord",
+      "events": {
+        "bearTrap": "Trappola per Orsi",
+        "crazyJoe": "Joe il Pazzo",
+        "svs": "Stato contro Stato",
+        "mercenaryBoss": "Boss Mercenario",
+        "foundry": "Fonderia",
+        "canyonClash": "Scontro nel Canyon"
+      },
+      "labels": {
+        "legion1": "Legione 1",
+        "legion2": "Legione 2",
+        "biWeekly": "Bisettimanale",
+        "tba": "Da annunciare"
+      }
+    },
+    "bearTrap": {
+      "tag": "Guida all'Evento",
+      "title": "Trappola per Orsi",
+      "sessions": {
+        "s1Title": "Sessione 1",
+        "s1Time": "01:00",
+        "s2Title": "Sessione 2",
+        "s2Time": "18:00",
+        "utc": "UTC"
+      },
+      "mechanics": {
+        "title": "Meccaniche",
+        "p1_1": "Ogni eroe possiede abilità speciali che forniscono potenziamenti all'intera carica. Tuttavia, ",
+        "p1_bold": "solo l'abilità del primo eroe (Capitano)",
+        "p1_2": " si applica alla carica.",
+        "p2": "Gli altri due eroi non contribuiscono con le loro abilità di carica, quindi sceglili basandoti esclusivamente sulla capacità delle truppe o sulle statistiche passive."
+      },
+      "join": {
+        "titlePart1": "Capitano se ti ",
+        "titleHighlight": "UNISCI",
+        "desc": "I migliori potenziamenti di danno e letalità per unirsi a cariche esistenti. L'ordine è prioritario da sinistra a destra.",
+        "noHeroes1": "Se nessuno di questi eroi è disponibile, invia le tue truppe ",
+        "noHeroesBold": "senza alcun eroe",
+        "noHeroes2": "."
+      },
+      "start": {
+        "titlePart1": "Capitano se ",
+        "titleHighlight": "INIZI",
+        "desc": "Usa questi eroi come capitano se stai avviando una carica contro l'orso."
+      },
+      "tips": {
+        "title": "Strategia e Consigli",
+        "desc": "Massimizza i tuoi punti e le ricompense in modo efficiente.",
+        "list": [
+          {
+            "title": "Rapporto Truppe",
+            "desc": "L'orso non uccide le truppe. Invia una formazione orientata al danno: 10% Fanteria, 10% Lancieri, 80% Arcieri."
+          },
+          {
+            "title": "Tempo della Carica",
+            "desc": "Imposta sempre le cariche a 5 minuti per massimizzare il numero di attacchi che il tuo team può effettuare."
+          },
+          {
+            "title": "Auto-Unisciti",
+            "desc": "Disattiva Auto-Unisciti se puoi essere online. L'unione manuale garantisce l'invio del corretto eroe capitano."
+          },
+          {
+            "title": "Bonus Territorio",
+            "desc": "Assicurati che la tua città sia situata sul Territorio dell'Alleanza per beneficiare dei nostri bonus tecnologici dell'alleanza."
+          }
+        ]
+      }
+    },
+    "crazyJoe": {
+      "tag": "Evento di Difesa",
+      "title": "Joe il Pazzo",
+      "startsAt": "Inizia alle",
+      "tba": "Da annunciare",
+      "generalRules": {
+        "title": "Regole Generali",
+        "rules": [
+          "Invia PRIMA TUTTE le tue truppe di Fanteria per rinforzare i membri dell'alleanza online.",
+          "Una volta esaurita la Fanteria, invia gli altri tipi di truppe (Lancieri e Arcieri) per rinforzare.",
+          "Distribuisci la difesa: non inviare rinforzi a città che hanno già più di 250k truppe rinforzate.",
+          "Non usare mai uno Scudo di Pace! Joe il Pazzo ignora gli scudi.",
+          "Posiziona i tuoi migliori eroi difensivi sulla parete della Guarnigione della tua città."
+        ]
+      },
+      "hqDefense": {
+        "title": "Regole specifiche per la Difesa del QG",
+        "labels": {
+          "maxTroops": "Truppe Max",
+          "ratio": "Rapporto",
+          "captains": "Capitani Richiesti"
+        },
+        "waves": [
+          {
+            "wave": "Ondata 10 (Difesa QG)",
+            "description": "Dopo l'ondata 9, richiama le tue truppe e invia la tua marcia più forte al QG. Concentrati sulla Fanteria ad alto HP per assorbire ed eliminare l'ondata.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Fan <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          },
+          {
+            "wave": "Ondata 20 (Difesa Finale QG)",
+            "description": "Dopo l'ondata 19, richiama nuovamente le truppe e corri al QG. Stessa priorità difensiva — prima la Fanteria. Il tuo membro più forte dovrebbe guidare la guarnigione.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Fan <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Strategie Pro",
+        "desc": "Consigli avanzati per scalare la classifica.",
+        "list": [
+          {
+            "title": "Nessuna Morte Permanente",
+            "desc": "Le truppe sconfitte da Joe il Pazzo vanno solo all'ospedale. Non ci sono perdite permanenti."
+          },
+          {
+            "title": "Massimizzare i Punti",
+            "desc": "Guadagni punti difendendo la tua città E difendendo gli alleati. Rinforzare gli altri è il segreto dei primi posti."
+          },
+          {
+            "title": "Città in Fiamme",
+            "desc": "Se fallisci una difesa due volte, la tua città brucerà e Joe ti ignorerà per il resto dell'evento. Se ciò accade, invia TUTTE le tue truppe a rinforzare gli altri!"
+          },
+          {
+            "title": "Esca Città Vuota",
+            "desc": "I giocatori di alto livello spesso svuotano completamente le loro città per massimizzare i punti di rinforzo altrove."
+          }
+        ]
+      }
+    },
+    "svs": {
+      "tag": "Evento Inter-Server",
+      "title": "Stato contro Stato",
+      "durationLabel": "Durata",
+      "durationValue": "6 Giorni",
+      "prepRules": {
+        "title": "Regole della Fase di Preparazione",
+        "rules": [
+          "Accumulare è la regola d'oro. Conserva Cristalli di Fuoco, acceleratori e widget esclusivamente per i loro giorni designati.",
+          "Il tempismo è tutto. Controlla attentamente l'ora di reset del server. Usare oggetti anche solo un minuto prima significa zero punti.",
+          "Punta sempre all'ultimo traguardo giornaliero per le ricompense personali, ma smetti di spendere una volta raggiunto per risparmiare per il prossimo SvS.",
+          "I Compiti Opzionali (🆗) danno punti, ma sono meno efficienti. Eseguili solo se miri a un posizionamento Top 100 generale."
+        ]
+      },
+      "battleRules": {
+        "title": "Regole della Fase di Battaglia",
+        "rules": [
+          "Mantieni uno Scudo di Pace di 24h in ogni momento a meno che tu non stia partecipando attivamente alle cariche per il Castello del Fuoco Solare o le torrette.",
+          "Non raccogliere risorse nello stato nemico. I giocatori nemici daranno la caccia ai raccoglitori per facili punti uccisione.",
+          "Segui le indicazioni di targeting di R5/R4. Non avviare attacchi solitari casuali. Unisciti a cariche coordinate per assicurare gli obiettivi.",
+          "Cura a lotti. Durante i combattimenti intensi, cura le tue truppe in piccoli lotti (30-60 min) per usare gli aiuti dell'alleanza e risparmiare acceleratori."
+        ]
+      },
+      "matrix": {
+        "title": "Matrice degli Aggiornamenti",
+        "desc": "Distribuzione giornaliera dei punti per la massima efficienza.",
+        "focus": "Priorità",
+        "optional": "Opzionale",
+        "headers": {
+          "category": "Categoria",
+          "d1": "Giorno 1",
+          "d2": "Giorno 2",
+          "d3": "Giorno 3",
+          "d4": "Giorno 4",
+          "d5": "Giorno 5"
+        },
+        "tasks": {
+          "fc": "Cristalli di Fuoco (CF)",
+          "construction": "Costruzione",
+          "research": "Ricerca / Alba",
+          "sigils": "Sigilli",
+          "fcShards": "Frammenti di CF",
+          "gather": "Raccogliere Risorse",
+          "wheel": "Ruota della Fortuna",
+          "heroShards": "Frammenti di Eroe",
+          "beasts": "Terrore / Bestie",
+          "troops": "Addestrare Truppe",
+          "charms": "Talismani",
+          "widgets": "Widget / Essenza",
+          "heroGears": "Equipaggiamento Eroe",
+          "chiefGear": "Equipaggiamento Capo",
+          "pets": "Animali (Avanzamento/Raffinamento)"
+        }
+      }
+    },
+    "notFound": {
+      "title": "404",
+      "subtitle": "Aspetta... Unicorni nella Tundra?",
+      "desc": "Ti sei spinto troppo lontano nella bufera, Capo. Le coordinate sono sbagliate, non ci sono risorse qui, e l'ipotermia potrebbe farti avere allucinazioni.",
+      "button": "Torna al Quartier Generale"
+    },
+    "labyrinth": {
+      "tag": "World of Soldiers · Evento",
+      "title": "Labirinto",
+      "standardLevels": {
+        "title": "Livelli Standard — Rapporti",
+        "orLabel": "o",
+        "levels": [
+          {
+            "name": "Caverna dei Mostri",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "30% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Miniera di Pietraluce",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "50% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Laboratorio Terrestre",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "60% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Forgia Oscura",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "45% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "40% Fan",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "40% Arc",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "marchLevels": {
+        "title": "Terra dei Coraggiosi & Cuore di Gaia",
+        "description": "Questi due livelli consentono fino a 3 marce. Segui questo ordine per risultati molto migliori.",
+        "marches": [
+          {
+            "number": 1,
+            "label": "Prima marcia",
+            "heroes": "Miglior Fanteria + Miglior Lanciere + Greg (senza equipaggiamento)",
+            "badgeClass": "bg-violet-200 dark:bg-violet-500/20 text-violet-700 dark:text-violet-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "60% Fan",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "40% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "0% Arc",
+                "class": "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "label": "Seconda marcia",
+            "heroes": "2ª Fanteria + Mia (senza equipaggiamento) + Miglior Arciere",
+            "badgeClass": "bg-emerald-200 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "54% Fan",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "3% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "43% Arc",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "label": "Terza marcia",
+            "heroes": "Migliori eroi rimanenti",
+            "badgeClass": "bg-amber-200 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "50% Fan",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "20% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "30% Arc",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "title": "Consigli Chiave",
+        "desc": "Note strategiche per il Labirinto",
+        "list": [
+          {
+            "title": "Nessun equipaggiamento su Greg e Mia",
+            "desc": "Invia Greg e Mia senza alcun equipaggiamento nelle rispettive marce."
+          },
+          {
+            "title": "L'ordine delle marce conta",
+            "desc": "Per i livelli a 3 marce, riempi sempre le marce nell'ordine 1 → 2 → 3 per la massima efficienza."
+          },
+          {
+            "title": "Prima i migliori eroi",
+            "desc": "Assegna sempre i tuoi eroi di Fanteria e Lancieri più forti alla prima marcia."
+          },
+          {
+            "title": "Rapporti multipli",
+            "desc": "Quando sono elencati due o più rapporti, scegli in base alle tue truppe disponibili."
+          }
+        ]
+      }
+    },
+    "diceChampionship": {
+      "tag": "Tabellone del Torneo",
+      "title": "Campionato di Dadi",
+      "dateLabel": "Data",
+      "podiumTitle": "Podio",
+      "bracketTitle": "Tabellone del Torneo",
+      "standingsTitle": "Classifica",
+      "howItWorksTitle": "Come funziona?",
+      "rules": [
+        "Il vincitore guadagna rispetto e il diritto di rinominare il perdente.",
+        "Tutti i punteggi vengono aggiornati manualmente dalla leadership dell'alleanza.",
+        "Gli spareggi determinano il vero campione."
+      ],
+      "prizesTitle": "Premi e Conseguenze",
+      "prizes": {
+        "first": "Il vincitore guadagna RISPETTO e può rinominare il perdente",
+        "second": "Il finalista riceve una solida stretta di mano",
+        "third": "Il semifinalista ottiene posti in prima fila per il prossimo torneo"
+      },
+      "champion": "Campione",
+      "finalist": "Finalista",
+      "semifinalist": "Semifinalista",
+      "losersTitle": "Salone della Vergogna",
+      "losersSubtitle": "Avevano cose migliori da fare... a quanto pare",
+      "table": {
+        "rank": "#",
+        "player": "Giocatore",
+        "matches": "Partite",
+        "wins": "Vittorie",
+        "losses": "Sconfitte",
+        "tiebreaks": "Spareggi Vinti"
+      }
+    }
+  }
+}

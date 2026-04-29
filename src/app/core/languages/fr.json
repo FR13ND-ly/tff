@@ -1,0 +1,522 @@
+{
+  "name": "FR",
+  "imageUrl": "",
+  "pack": {
+    "header": {
+      "bearTrap": "Piège à Ours",
+      "crazyJoe": "Joe le Fou",
+      "svs": "EVE",
+      "labyrinth": "Labyrinthe",
+      "diceChampionship": "Championnat de Dés"
+    },
+    "footer": {
+      "questions": "Si vous avez des questions, des idées ou des plaintes, demandez à",
+      "copyright": "© 2026 TFF Alliance • État 2327 • Whiteout Survival"
+    },
+    "landing": {
+      "title": "Bienvenue dans notre Grande Alliance !",
+      "discord": "Rejoindre notre Discord",
+      "events": {
+        "bearTrap": "Piège à Ours",
+        "crazyJoe": "Joe le Fou",
+        "svs": "État contre État",
+        "mercenaryBoss": "Boss Mercenaire",
+        "foundry": "Fonderie",
+        "canyonClash": "Clash du Canyon"
+      },
+      "labels": {
+        "legion1": "Légion 1",
+        "legion2": "Légion 2",
+        "biWeekly": "Bimensuel",
+        "tba": "À annoncer"
+      }
+    },
+    "bearTrap": {
+      "tag": "Guide de l'Événement",
+      "title": "Piège à Ours",
+      "sessions": {
+        "s1Title": "Session 1",
+        "s1Time": "01:00",
+        "s2Title": "Session 2",
+        "s2Time": "18:00",
+        "utc": "UTC"
+      },
+      "mechanics": {
+        "title": "Mécaniques",
+        "p1_1": "Chaque héros possède des compétences spéciales qui confèrent des bonus à toute la charge. Cependant, ",
+        "p1_bold": "seule la compétence du premier héros (Capitaine)",
+        "p1_2": " s'applique à la charge.",
+        "p2": "Les deux autres héros ne contribuent pas à leurs compétences de charge, choisissez-les donc uniquement en fonction de la capacité de troupes ou des statistiques passives."
+      },
+      "join": {
+        "titlePart1": "Capitaine si vous ",
+        "titleHighlight": "REJOIGNEZ",
+        "desc": "Meilleurs bonus de dégâts et de létalité pour rejoindre des charges existantes. L'ordre est priorisé de gauche à droite.",
+        "noHeroes1": "Si aucun de ces héros n'est disponible, envoyez vos troupes ",
+        "noHeroesBold": "sans aucun héros",
+        "noHeroes2": "."
+      },
+      "start": {
+        "titlePart1": "Capitaine si vous ",
+        "titleHighlight": "DÉMARREZ",
+        "desc": "Utilisez ces héros comme capitaine si vous initiez une charge contre l'ours."
+      },
+      "tips": {
+        "title": "Stratégie et Conseils",
+        "desc": "Maximisez vos points et récompenses efficacement.",
+        "list": [
+          {
+            "title": "Ratio de Troupes",
+            "desc": "L'ours ne tue pas les troupes. Envoyez une formation axée sur les dégâts : 10% Infanterie, 10% Lanciers, 80% Tireurs."
+          },
+          {
+            "title": "Durée de la Charge",
+            "desc": "Réglez toujours vos charges à 5 minutes pour maximiser le nombre de frappes que votre équipe peut effectuer."
+          },
+          {
+            "title": "Auto-Rejoindre",
+            "desc": "Désactivez Auto-Rejoindre si vous pouvez être en ligne. Rejoindre manuellement garantit l'envoi du bon héros capitaine."
+          },
+          {
+            "title": "Bonus de Territoire",
+            "desc": "Assurez-vous que votre ville est située sur le Territoire de l'Alliance pour bénéficier de nos bonus technologiques d'alliance."
+          }
+        ]
+      }
+    },
+    "crazyJoe": {
+      "tag": "Événement de Défense",
+      "title": "Joe le Fou",
+      "startsAt": "Commence à",
+      "tba": "À annoncer",
+      "generalRules": {
+        "title": "Règles Générales",
+        "rules": [
+          "Envoyez EN PREMIER TOUTES vos troupes d'Infanterie pour renforcer les membres de l'alliance en ligne.",
+          "Une fois l'Infanterie épuisée, envoyez vos autres types de troupes (Lanciers et Tireurs) pour renforcer.",
+          "Répartissez la défense : n'envoyez pas de renforts dans les villes qui ont déjà plus de 250k troupes renforcées.",
+          "N'utilisez jamais un Bouclier de Paix ! Joe le Fou ignore les boucliers.",
+          "Placez vos meilleurs héros défensifs sur le mur de Garnison de votre propre ville."
+        ]
+      },
+      "hqDefense": {
+        "title": "Règles spécifiques à la Défense du QG",
+        "labels": {
+          "maxTroops": "Troupes Max",
+          "ratio": "Ratio",
+          "captains": "Capitaines Requis"
+        },
+        "waves": [
+          {
+            "wave": "Vague 10 (Défense QG)",
+            "description": "Après la vague 9, rappelez vos troupes et envoyez votre marche la plus forte au QG. Concentrez-vous sur l'Infanterie à PV élevés pour absorber et éliminer la vague.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          },
+          {
+            "wave": "Vague 20 (Défense Finale QG)",
+            "description": "Après la vague 19, rappelez à nouveau les troupes et foncez au QG. Même priorité défensive — Infanterie en premier. Votre membre le plus fort doit diriger la garnison.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Stratégies Pro",
+        "desc": "Conseils avancés pour grimper dans le classement.",
+        "list": [
+          {
+            "title": "Pas de Morts Permanentes",
+            "desc": "Les troupes vaincues par Joe le Fou vont seulement à l'hôpital. Il n'y a pas de pertes permanentes."
+          },
+          {
+            "title": "Maximiser les Points",
+            "desc": "Vous gagnez des points pour défendre votre propre ville ET pour défendre vos alliés. Renforcer les autres est le secret des meilleures places."
+          },
+          {
+            "title": "Ville en Feu",
+            "desc": "Si vous échouez deux fois à une défense, votre ville brûlera et Joe vous ignorera pour le reste de l'événement. Dans ce cas, envoyez TOUTES vos troupes renforcer les autres !"
+          },
+          {
+            "title": "Leurre de Ville Vide",
+            "desc": "Les joueurs de haut niveau vident souvent entièrement leur ville pour maximiser les points de renforcement ailleurs."
+          }
+        ]
+      }
+    },
+    "svs": {
+      "tag": "Événement Inter-Serveur",
+      "title": "État contre État",
+      "durationLabel": "Durée",
+      "durationValue": "6 Jours",
+      "prepRules": {
+        "title": "Règles de la Phase de Préparation",
+        "rules": [
+          "Thésauriser est la règle d'or. Conservez les Cristaux de Feu, les accélérations et les widgets exclusivement pour leurs jours désignés.",
+          "Le timing est crucial. Vérifiez attentivement l'heure de réinitialisation du serveur. Utiliser des objets ne serait-ce qu'une minute trop tôt signifie zéro point.",
+          "Visez toujours le dernier jalon quotidien pour les récompenses personnelles, mais arrêtez de dépenser une fois atteint pour économiser pour le prochain EVE.",
+          "Les Tâches Optionnelles (🆗) rapportent des points, mais sont moins efficaces. Ne les faites que si vous visez un classement Top 100 général."
+        ]
+      },
+      "battleRules": {
+        "title": "Règles de la Phase de Bataille",
+        "rules": [
+          "Maintenez un Bouclier de Paix de 24h en permanence sauf si vous participez activement aux charges pour le Château du Soleil ou les tourelles.",
+          "Ne récoltez pas de ressources dans l'état ennemi. Les joueurs ennemis chasseront les récolteurs pour des points de meurtre faciles.",
+          "Suivez les appels de ciblage des R5/R4. Ne lancez pas d'attaques solo aléatoires. Rejoignez des charges coordonnées pour sécuriser les objectifs.",
+          "Soignez par lots. Pendant les combats intenses, soignez vos troupes en petits lots (30-60 min) pour utiliser les aides de l'alliance et économiser les accélérations."
+        ]
+      },
+      "matrix": {
+        "title": "Matrice d'Améliorations",
+        "desc": "Distribution quotidienne des points pour une efficacité maximale.",
+        "focus": "Priorité",
+        "optional": "Optionnel",
+        "headers": {
+          "category": "Catégorie",
+          "d1": "Jour 1",
+          "d2": "Jour 2",
+          "d3": "Jour 3",
+          "d4": "Jour 4",
+          "d5": "Jour 5"
+        },
+        "tasks": {
+          "fc": "Cristaux de Feu (CF)",
+          "construction": "Construction",
+          "research": "Recherche / Aube",
+          "sigils": "Sceaux",
+          "fcShards": "Éclats de CF",
+          "gather": "Collecter des Ressources",
+          "wheel": "Roue de la Fortune",
+          "heroShards": "Éclats de Héros",
+          "beasts": "Terreur / Bêtes",
+          "troops": "Entraîner des Troupes",
+          "charms": "Charmes",
+          "widgets": "Widgets / Essence",
+          "heroGears": "Équipement de Héros",
+          "chiefGear": "Équipement de Chef",
+          "pets": "Animaux (Progression/Raffinement)"
+        }
+      }
+    },
+    "notFound": {
+      "title": "404",
+      "subtitle": "Attends... Des Licornes dans la Toundra ?",
+      "desc": "Tu t'es aventuré trop loin dans le blizzard, Chef. Les coordonnées sont fausses, il n'y a pas de ressources ici, et l'hypothermie te fait peut-être halluciner.",
+      "button": "Retourner au Quartier Général"
+    },
+    "labyrinth": {
+      "tag": "World of Soldiers · Événement",
+      "title": "Labyrinthe",
+      "standardLevels": {
+        "title": "Niveaux Standard — Ratios",
+        "orLabel": "ou",
+        "levels": [
+          {
+            "name": "Caverne des Monstres",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "30% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Mine de Pierre Lumineuse",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "50% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Laboratoire Terrestre",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "60% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Forge Sombre",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "45% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "40% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lan",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "40% Tir",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "marchLevels": {
+        "title": "Terre des Braves & Cœur de Gaïa",
+        "description": "Ces deux niveaux permettent jusqu'à 3 marches. Suivez cet ordre pour de bien meilleurs résultats.",
+        "marches": [
+          {
+            "number": 1,
+            "label": "Première marche",
+            "heroes": "Meilleure Infanterie + Meilleur Lancier + Greg (sans équipement)",
+            "badgeClass": "bg-violet-200 dark:bg-violet-500/20 text-violet-700 dark:text-violet-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "60% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "40% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "0% Tir",
+                "class": "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "label": "Deuxième marche",
+            "heroes": "2ème Infanterie + Mia (sans équipement) + Meilleur Tireur",
+            "badgeClass": "bg-emerald-200 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "54% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "3% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "43% Tir",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "label": "Troisième marche",
+            "heroes": "Meilleurs héros restants",
+            "badgeClass": "bg-amber-200 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "50% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "20% Lan",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "30% Tir",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "title": "Conseils Clés",
+        "desc": "Notes stratégiques pour le Labyrinthe",
+        "list": [
+          {
+            "title": "Pas d'équipement sur Greg et Mia",
+            "desc": "Envoyez Greg et Mia sans aucun équipement dans leurs marches respectives."
+          },
+          {
+            "title": "L'ordre des marches est important",
+            "desc": "Pour les niveaux à 3 marches, remplissez toujours les marches dans l'ordre 1 → 2 → 3 pour une efficacité maximale."
+          },
+          {
+            "title": "Meilleurs héros d'abord",
+            "desc": "Assignez toujours vos héros d'Infanterie et de Lancier les plus puissants à la première marche."
+          },
+          {
+            "title": "Ratios multiples",
+            "desc": "Lorsque deux ratios ou plus sont listés, choisissez en fonction de vos troupes disponibles."
+          }
+        ]
+      }
+    },
+    "diceChampionship": {
+      "tag": "Tableau du Tournoi",
+      "title": "Championnat de Dés",
+      "dateLabel": "Date",
+      "podiumTitle": "Podium",
+      "bracketTitle": "Tableau du Tournoi",
+      "standingsTitle": "Classement",
+      "howItWorksTitle": "Comment ça fonctionne ?",
+      "rules": [
+        "Le gagnant gagne le respect et le droit de renommer le perdant.",
+        "Tous les scores sont mis à jour manuellement par la direction de l'alliance.",
+        "Les égalités déterminent le vrai champion."
+      ],
+      "prizesTitle": "Prix et Conséquences",
+      "prizes": {
+        "first": "Le gagnant gagne du RESPECT et peut renommer le perdant",
+        "second": "Le finaliste reçoit une poignée de main ferme",
+        "third": "Le demi-finaliste obtient des places au premier rang pour le prochain tournoi"
+      },
+      "champion": "Champion",
+      "finalist": "Finaliste",
+      "semifinalist": "Demi-finaliste",
+      "losersTitle": "Palais de la Honte",
+      "losersSubtitle": "Ils avaient mieux à faire... apparemment",
+      "table": {
+        "rank": "#",
+        "player": "Joueur",
+        "matches": "Matchs",
+        "wins": "Victoires",
+        "losses": "Défaites",
+        "tiebreaks": "Égalités Gagnées"
+      }
+    }
+  }
+}

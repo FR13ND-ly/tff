@@ -1,0 +1,64 @@
+{
+  "id": 1,
+  "title": "Season 1: First Bloom",
+  "date": "April 2026",
+  "isFinished": false,
+  "players": [
+    { "id": "fr13nd", "name": "FR13ND", "avatar": "/heroes/jeronimo.png" },
+    { "id": "arte", "name": "Arte", "avatar": "/heroes/jeronimo.png" },
+    { "id": "thorn", "name": "Black Thorn", "avatar": "/heroes/jeronimo.png" },
+    { "id": "cheryl", "name": "Cheryl", "avatar": "/heroes/jeronimo.png" },
+    { "id": "spanish_mafia", "name": "SpanishMafi@", "avatar": "/heroes/jeronimo.png" },
+    { "id": "yvesdure01", "name": "YvesDure01", "avatar": "/heroes/jeronimo.png" },
+    { "id": "subzero", "name": "Subzero DZ", "avatar": "/heroes/jeronimo.png" },
+    { "id": "chief_kl", "name": "Chief KL", "avatar": "/heroes/jeronimo.png" },
+    { "id": "butterfly", "name": "butterfly21", "avatar": "/heroes/jeronimo.png" },
+    { "id": "abo_tarek", "name": "Abo Tarek", "avatar": "/heroes/jeronimo.png" },
+    { "id": "josepito", "name": "Josepito", "avatar": "/heroes/jeronimo.png" },
+    { "id": "dupka", "name": "Dupka", "avatar": "/heroes/jeronimo.png" },
+    { "id": "pieroticus", "name": "Pieroticus", "avatar": "/heroes/jeronimo.png" },
+    { "id": "denirox", "name": "DeniroX", "avatar": "/heroes/jeronimo.png" },
+    { "id": "bbq_2", "name": "BBQ 2", "avatar": "/heroes/jeronimo.png" },
+    { "id": "pierotik", "name": "Pierotik#2", "avatar": "/heroes/jeronimo.png" },
+
+    { "id": "shadow", "name": "Shadow Warrior", "avatar": "/heroes/jeronimo.png" },
+    { "id": "dark_phoenix", "name": "Dark Phoenix", "avatar": "/heroes/jeronimo.png" },
+    { "id": "ladyblaze", "name": "LadyBlaze", "avatar": "/heroes/jeronimo.png" },
+    { "id": "zzz", "name": "Zzzz", "avatar": "/heroes/jeronimo.png" },
+    { "id": "serraph", "name": "Serraph", "avatar": "/heroes/jeronimo.png" },
+    { "id": "lord_elyah", "name": "Lord Elyah", "avatar": "/heroes/jeronimo.png" },
+    { "id": "chai", "name": "Chai", "avatar": "/heroes/jeronimo.png" },
+    { "id": "pun41", "name": "PUN41", "avatar": "/heroes/jeronimo.png" },
+    { "id": "shots", "name": "Shots", "avatar": "/heroes/jeronimo.png" },
+    { "id": "igor3p", "name": "Igor3p", "avatar": "/heroes/jeronimo.png" },
+    { "id": "musky_hunter", "name": "Musky Hunter", "avatar": "/heroes/jeronimo.png" },
+    { "id": "bernie", "name": "Bernie", "avatar": "/heroes/jeronimo.png" },
+    { "id": "solid_snake", "name": "Solid Snake", "avatar": "/heroes/jeronimo.png" },
+    { "id": "tiny_chai", "name": "Tiny Chai", "avatar": "/heroes/jeronimo.png" }
+  ],
+  "championId": "bs",
+  "losers": [
+    { "playerId": "shadow", "excuse": "Had to walk the bear" },
+    { "playerId": "ladyblaze", "excuse": "Dice looked too pointy" },
+    { "playerId": "zzz", "excuse": "Fell asleep mid-match" },
+    { "playerId": "serraph", "excuse": "Forgot the tournament date" },
+    { "playerId": "chai", "excuse": "Dice were too cold to handle" },
+    { "playerId": "dark_phoenix", "excuse": "Dice were too hot to handle" }
+  ],
+  "rounds": [
+    {
+        "title": "Round 1",
+        "isFinished": false,
+        "matches": [
+            { "id": "r1_m1", "player1Id": "thorn", "player2Id": "denirox",     "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m2", "player1Id": "chief_kl",    "player2Id": "arte",        "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m3", "player1Id": "abo_tarek",   "player2Id": "pieroticus",  "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m4", "player1Id": "josepito",    "player2Id": "cheryl",      "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m5", "player1Id": "fr13nd",      "player2Id": "yvesdure01",  "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m6", "player1Id": "dupka",       "player2Id": "pierotik",    "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m7", "player1Id": "spanish_mafia","player2Id": "butterfly",   "player1Wins": 0, "player2Wins": 0 },
+            { "id": "r1_m8", "player1Id": "bbq_2",       "player2Id": "subzero",     "player1Wins": 0, "player2Wins": 0 }
+        ]
+    }
+  ]
+}

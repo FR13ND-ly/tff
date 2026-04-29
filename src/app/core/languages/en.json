@@ -1,0 +1,522 @@
+{
+  "name": "EN",
+  "imageUrl": "",
+  "pack": {
+    "header": {
+      "bearTrap": "Bear Trap",
+      "crazyJoe": "Crazy Joe",
+      "svs": "SvS",
+      "labyrinth": "Labyrinth",
+      "diceChampionship": "Dice Championship"
+    },
+    "footer": {
+      "questions": "If you have any questions, ideas or complaints, ask",
+      "copyright": "© 2026 TFF Alliance • State 2327 • Whiteout Survival"
+    },
+    "landing": {
+      "title": "Welcome to our Great Alliance!",
+      "discord": "Join our Discord",
+      "events": {
+        "bearTrap": "Bear Trap",
+        "crazyJoe": "Crazy Joe",
+        "svs": "State vs State",
+        "mercenaryBoss": "Mercenary Boss",
+        "foundry": "Foundry",
+        "canyonClash": "Canyon Clash"
+      },
+      "labels": {
+        "legion1": "Legion 1",
+        "legion2": "Legion 2",
+        "biWeekly": "Bi-weekly",
+        "tba": "TBA"
+      }
+    },
+    "bearTrap": {
+      "tag": "Event Guide",
+      "title": "Bear Trap",
+      "sessions": {
+        "s1Title": "Session 1",
+        "s1Time": "01:00",
+        "s2Title": "Session 2",
+        "s2Time": "18:00",
+        "utc": "UTC"
+      },
+      "mechanics": {
+        "title": "Mechanics",
+        "p1_1": "Each hero possesses special skills that provide buffs to the entire rally. However, ",
+        "p1_bold": "only the skill of the first hero (Captain)",
+        "p1_2": " applies to the Rally.",
+        "p2": "The other two heroes do not contribute their rally skills, so choose them based solely on troop capacity or passive stats."
+      },
+      "join": {
+        "titlePart1": "Captain if you ",
+        "titleHighlight": "JOIN",
+        "desc": "Best damage and lethality buffs for joining existing rallies. Order is prioritized left to right.",
+        "noHeroes1": "If you do not have any of these heroes available, send your troops ",
+        "noHeroesBold": "without any heroes",
+        "noHeroes2": "."
+      },
+      "start": {
+        "titlePart1": "Captain if you ",
+        "titleHighlight": "START",
+        "desc": "Use these heroes as your captain if you are initiating a rally against the Bear."
+      },
+      "tips": {
+        "title": "Strategy & Tips",
+        "desc": "Maximize your points and rewards efficiently.",
+        "list": [
+          {
+            "title": "Troop Ratio",
+            "desc": "The Bear doesn't kill troops. Send a damage-heavy formation: 10% Infantry, 10% Lancers, 80% Marksmen."
+          },
+          {
+            "title": "Rally Time",
+            "desc": "Always set your rallies to 5 minutes to maximize the number of hits your team can make."
+          },
+          {
+            "title": "Auto-Join",
+            "desc": "Turn off Auto-Join if you can be online. Manual joining ensures you send the correct captain hero."
+          },
+          {
+            "title": "Territory Buff",
+            "desc": "Ensure your city is located on Alliance Territory to benefit from our alliance tech buffs."
+          }
+        ]
+      }
+    },
+    "crazyJoe": {
+      "tag": "Defense Event",
+      "title": "Crazy Joe",
+      "startsAt": "Starts At",
+      "tba": "TBA",
+      "generalRules": {
+        "title": "General Rules",
+        "rules": [
+          "Send ALL your Infantry troops FIRST to reinforce alliance members who are online.",
+          "Once you run out of Infantry, send your other troop types (Lancers & Marksmen) to reinforce.",
+          "Spread the defense: Do not send reinforcements to cities that already have more than 250k reinforced troops.",
+          "Never use a Peace Shield! Crazy Joe ignores shields.",
+          "Set your best defensive heroes on your own city's Garrison wall."
+        ]
+      },
+      "hqDefense": {
+        "title": "HQ Defense specific rules",
+        "labels": {
+          "maxTroops": "Max Troops",
+          "ratio": "Ratio",
+          "captains": "Required Captains"
+        },
+        "waves": [
+          {
+            "wave": "Wave 10 (HQ Defense)",
+            "description": "After wave 9, recall your troops and send your strongest march to the HQ. Focus on high-HP Infantry to absorb and eliminate the wave.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          },
+          {
+            "wave": "Wave 20 (HQ Final Defense)",
+            "description": "After wave 19, recall troops again and rush to HQ. Same defensive priority — Infantry first. Your strongest member should lead the garrison.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Lan"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Pro Strategies",
+        "desc": "Advanced tips to climb the leaderboard.",
+        "list": [
+          {
+            "title": "No Permanent Deaths",
+            "desc": "Troops defeated by Crazy Joe only go to the hospital. There are no permanent losses."
+          },
+          {
+            "title": "Maximize Points",
+            "desc": "You earn points for defending your own city AND for defending allies. Reinforcing others is the secret to top ranks."
+          },
+          {
+            "title": "City Burning",
+            "desc": "If you fail a defense twice, your city will burn and Joe will ignore you for the rest of the event. If this happens, send ALL your troops to reinforce others!"
+          },
+          {
+            "title": "Empty City Bait",
+            "desc": "High-level players often empty their cities entirely to maximize reinforcement points elsewhere."
+          }
+        ]
+      }
+    },
+    "svs": {
+      "tag": "Cross-Server Event",
+      "title": "State vs State",
+      "durationLabel": "Duration",
+      "durationValue": "6 Days",
+      "prepRules": {
+        "title": "Prep Phase Rules",
+        "rules": [
+          "Hoarding is the golden rule. Save Fire Crystals, speedups, and widgets exclusively for their specific designated days.",
+          "Timing is everything. Check the server reset time carefully. Using items even a minute early means zero points.",
+          "Always aim for the final daily milestone for personal rewards, but stop spending once you hit it to save for the next SvS.",
+          "Optional Tasks (🆗) give points, but are less efficient. Only push these if you are aiming for a Top 100 overall ranking."
+        ]
+      },
+      "battleRules": {
+        "title": "Battle Phase Rules",
+        "rules": [
+          "Maintain a 24h Peace Shield at all times unless you are actively participating in rallies for the Sunfire Castle or Turrets.",
+          "Do not gather resources in the enemy state. Enemy players will hunt gatherers for easy kill points.",
+          "Follow R5/R4 targeting calls. Do not start random solo attacks. Join coordinated rallies to secure the objectives.",
+          "Heal in batches. During heavy fighting, heal your troops in small batches (30-60 mins) to use alliance helps and save speedups."
+        ]
+      },
+      "matrix": {
+        "title": "Upgrade Matrix",
+        "desc": "Daily points distribution for maximum efficiency.",
+        "focus": "Focus",
+        "optional": "Optional",
+        "headers": {
+          "category": "Category",
+          "d1": "Day 1",
+          "d2": "Day 2",
+          "d3": "Day 3",
+          "d4": "Day 4",
+          "d5": "Day 5"
+        },
+        "tasks": {
+          "fc": "Fire Crystals (FCs)",
+          "construction": "Construction",
+          "research": "Research / Dawn",
+          "sigils": "Sigils",
+          "fcShards": "FC Shards",
+          "gather": "Gather Resources",
+          "wheel": "Lucky Wheel",
+          "heroShards": "Hero Shards",
+          "beasts": "Terror / Beasts",
+          "troops": "Train Troops",
+          "charms": "Charms",
+          "widgets": "Widgets / Essence",
+          "heroGears": "Hero Gears",
+          "chiefGear": "Chief Gear",
+          "pets": "Pet Adv / Refine"
+        }
+      }
+    },
+    "notFound": {
+      "title": "404",
+      "subtitle": "Wait... Unicorns in the Tundra?",
+      "desc": "You've wandered too far into the blizzard, Chief. The coordinates are wrong, there are no resources here, and hypothermia might be making you hallucinate.",
+      "button": "Return to Headquarters"
+    },
+    "labyrinth": {
+      "tag": "World of Soldiers · Event",
+      "title": "Labyrinth",
+      "standardLevels": {
+        "title": "Standard Levels — Ratios",
+        "orLabel": "or",
+        "levels": [
+          {
+            "name": "Cave of Monsters",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "30% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Glowstone Mine",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "50% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Earthlab",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "60% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Dark Forge",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "45% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "40% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Lnc",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "40% Mrk",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "marchLevels": {
+        "title": "Land of the Brave & Gaia's Heart",
+        "description": "These two levels allow up to 3 marches. Follow this order for far better results.",
+        "marches": [
+          {
+            "number": 1,
+            "label": "First march",
+            "heroes": "Best Infantry + Best Lancer + Greg (no gear)",
+            "badgeClass": "bg-violet-200 dark:bg-violet-500/20 text-violet-700 dark:text-violet-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "60% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "40% Lnc",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "0% Mrk",
+                "class": "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "label": "Second march",
+            "heroes": "2nd Infantry + Mia (no gear) + Best Marksman",
+            "badgeClass": "bg-emerald-200 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "54% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "3% Lnc",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "43% Mrk",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "label": "Third march",
+            "heroes": "Best remaining heroes",
+            "badgeClass": "bg-amber-200 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "50% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "20% Lnc",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "30% Mrk",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "title": "Key Tips",
+        "desc": "Strategy notes for Labyrinth",
+        "list": [
+          {
+            "title": "No gear on Greg & Mia",
+            "desc": "Send Greg and Mia without any equipment in their respective marches."
+          },
+          {
+            "title": "March order matters",
+            "desc": "For 3-march levels, always fill marches in order 1 → 2 → 3 for maximum efficiency."
+          },
+          {
+            "title": "Best heroes first",
+            "desc": "Always assign your strongest Infantry and Lancer heroes to the first march."
+          },
+          {
+            "title": "Multiple ratios",
+            "desc": "When two or more ratios are listed, choose based on your available troops."
+          }
+        ]
+      }
+    },
+    "diceChampionship": {
+      "tag": "Tournament Bracket",
+      "title": "Dice Championship",
+      "dateLabel": "Date",
+      "podiumTitle": "Podium",
+      "bracketTitle": "Tournament Bracket",
+      "standingsTitle": "Standings",
+      "howItWorksTitle": "How it works?",
+      "rules": [
+        "Winner earns respect and the right to rename the loser.",
+        "All scores are updated manually by the alliance leadership.",
+        "Tie-breaks determine the true champion."
+      ],
+      "prizesTitle": "Prizes & Consequences",
+      "prizes": {
+        "first": "Winner earns RESPECT and can rename the loser",
+        "second": "Finalist receives a firm handshake",
+        "third": "Semifinalist gets front-row seats to the next tournament"
+      },
+      "champion": "Champion",
+      "finalist": "Finalist",
+      "semifinalist": "Semifinalist",
+      "losersTitle": "Hall of Shame",
+      "losersSubtitle": "They had better things to do... apparently",
+      "table": {
+        "rank": "#",
+        "player": "Player",
+        "matches": "Matches",
+        "wins": "Wins",
+        "losses": "Losses",
+        "tiebreaks": "Tie-Breaks Won"
+      }
+    }
+  }
+}

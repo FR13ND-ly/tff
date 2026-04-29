@@ -1,0 +1,522 @@
+{
+  "name": "ID",
+  "imageUrl": "",
+  "pack": {
+    "header": {
+      "bearTrap": "Jebakan Beruang",
+      "crazyJoe": "Joe Gila",
+      "svs": "NvN",
+      "labyrinth": "Labirin",
+      "diceChampionship": "Kejuaraan Dadu"
+    },
+    "footer": {
+      "questions": "Jika kamu memiliki pertanyaan, ide, atau keluhan, tanyakan kepada",
+      "copyright": "© 2026 TFF Alliance • Negara 2327 • Whiteout Survival"
+    },
+    "landing": {
+      "title": "Selamat Datang di Aliansi Agung kami!",
+      "discord": "Bergabung dengan Discord kami",
+      "events": {
+        "bearTrap": "Jebakan Beruang",
+        "crazyJoe": "Joe Gila",
+        "svs": "Negara vs Negara",
+        "mercenaryBoss": "Bos Tentara Bayaran",
+        "foundry": "Peleburan",
+        "canyonClash": "Pertempuran Jurang"
+      },
+      "labels": {
+        "legion1": "Legiun 1",
+        "legion2": "Legiun 2",
+        "biWeekly": "Dua Mingguan",
+        "tba": "Akan Diumumkan"
+      }
+    },
+    "bearTrap": {
+      "tag": "Panduan Event",
+      "title": "Jebakan Beruang",
+      "sessions": {
+        "s1Title": "Sesi 1",
+        "s1Time": "01:00",
+        "s2Title": "Sesi 2",
+        "s2Time": "18:00",
+        "utc": "UTC"
+      },
+      "mechanics": {
+        "title": "Mekanisme",
+        "p1_1": "Setiap pahlawan memiliki keahlian khusus yang memberikan buff ke seluruh serbu. Namun, ",
+        "p1_bold": "hanya keahlian pahlawan pertama (Kapten)",
+        "p1_2": " yang berlaku untuk serbu.",
+        "p2": "Dua pahlawan lainnya tidak berkontribusi keahlian serbu mereka, jadi pilihlah mereka hanya berdasarkan kapasitas pasukan atau statistik pasif."
+      },
+      "join": {
+        "titlePart1": "Kapten saat ",
+        "titleHighlight": "BERGABUNG",
+        "desc": "Buff kerusakan dan mematikan terbaik untuk bergabung dengan serbu yang ada. Urutan diprioritaskan dari kiri ke kanan.",
+        "noHeroes1": "Jika tidak ada pahlawan yang tersedia, kirimkan pasukan ",
+        "noHeroesBold": "tanpa pahlawan apapun",
+        "noHeroes2": "."
+      },
+      "start": {
+        "titlePart1": "Kapten saat ",
+        "titleHighlight": "MEMULAI",
+        "desc": "Gunakan pahlawan ini sebagai kapten jika kamu memulai serbu melawan beruang."
+      },
+      "tips": {
+        "title": "Strategi & Tips",
+        "desc": "Maksimalkan poin dan hadiah secara efisien.",
+        "list": [
+          {
+            "title": "Rasio Pasukan",
+            "desc": "Beruang tidak membunuh pasukan. Kirim formasi berbasis kerusakan: 10% Infanteri, 10% Tombak, 80% Pemanah."
+          },
+          {
+            "title": "Waktu Serbu",
+            "desc": "Selalu atur serbu ke 5 menit untuk memaksimalkan jumlah serangan yang bisa dilakukan tim."
+          },
+          {
+            "title": "Auto-Gabung",
+            "desc": "Matikan Auto-Gabung jika kamu bisa online. Bergabung secara manual memastikan kamu mengirim kapten yang benar."
+          },
+          {
+            "title": "Bonus Wilayah",
+            "desc": "Pastikan kotamu berada di Wilayah Aliansi untuk mendapatkan bonus teknologi aliansi kami."
+          }
+        ]
+      }
+    },
+    "crazyJoe": {
+      "tag": "Event Pertahanan",
+      "title": "Joe Gila",
+      "startsAt": "Dimulai Pada",
+      "tba": "Akan Diumumkan",
+      "generalRules": {
+        "title": "Aturan Umum",
+        "rules": [
+          "Kirim SEMUA pasukan Infanteri TERLEBIH DAHULU untuk memperkuat anggota aliansi yang online.",
+          "Setelah Infanteri habis, kirim jenis pasukan lain (Tombak & Pemanah) untuk memperkuat.",
+          "Sebarkan pertahanan: Jangan kirim bala bantuan ke kota yang sudah memiliki lebih dari 250k pasukan bala bantuan.",
+          "Jangan pernah gunakan Perisai Damai! Joe Gila mengabaikan perisai.",
+          "Tempatkan pahlawan pertahanan terbaikmu di dinding Garnisun kotamu sendiri."
+        ]
+      },
+      "hqDefense": {
+        "title": "Aturan khusus Pertahanan Markas",
+        "labels": {
+          "maxTroops": "Maks. Pasukan",
+          "ratio": "Rasio",
+          "captains": "Kapten yang Dibutuhkan"
+        },
+        "waves": [
+          {
+            "wave": "Gelombang 10 (Pertahanan Markas)",
+            "description": "Setelah gelombang 9, tarik kembali pasukanmu dan kirim pawai terkuatmu ke Markas. Fokus pada Infanteri ber-HP tinggi untuk menyerap dan mengeliminasi gelombang.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Tom"
+          },
+          {
+            "wave": "Gelombang 20 (Pertahanan Akhir Markas)",
+            "description": "Setelah gelombang 19, tarik kembali pasukanmu dan segera ke Markas. Prioritas pertahanan sama — Infanteri dulu. Anggota terkuatmu harus memimpin garnisun.",
+            "maxTroops": "100k",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> Inf <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> Tom"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Strategi Pro",
+        "desc": "Tips lanjutan untuk naik peringkat.",
+        "list": [
+          {
+            "title": "Tidak Ada Kematian Permanen",
+            "desc": "Pasukan yang dikalahkan Joe Gila hanya masuk rumah sakit. Tidak ada kerugian permanen."
+          },
+          {
+            "title": "Maksimalkan Poin",
+            "desc": "Kamu mendapatkan poin untuk mempertahankan kotamu SENDIRI DAN untuk mempertahankan sekutu. Memperkuat orang lain adalah rahasia peringkat teratas."
+          },
+          {
+            "title": "Kota Terbakar",
+            "desc": "Jika kamu gagal bertahan dua kali, kotamu akan terbakar dan Joe akan mengabaikanmu sisa event. Jika ini terjadi, kirim SEMUA pasukanmu untuk memperkuat orang lain!"
+          },
+          {
+            "title": "Umpan Kota Kosong",
+            "desc": "Pemain tingkat tinggi sering mengosongkan kota mereka sepenuhnya untuk memaksimalkan poin bala bantuan di tempat lain."
+          }
+        ]
+      }
+    },
+    "svs": {
+      "tag": "Event Antar-Server",
+      "title": "Negara vs Negara",
+      "durationLabel": "Durasi",
+      "durationValue": "6 Hari",
+      "prepRules": {
+        "title": "Aturan Fase Persiapan",
+        "rules": [
+          "Menimbun adalah aturan emas. Simpan Kristal Api, speedup, dan widget khusus untuk hari yang telah ditentukan.",
+          "Waktu adalah segalanya. Periksa waktu reset server dengan cermat. Menggunakan item bahkan satu menit lebih awal berarti nol poin.",
+          "Selalu bidik pencapaian harian terakhir untuk hadiah pribadi, tapi berhenti menghabiskan setelah mencapainya untuk ditabung untuk NvN berikutnya.",
+          "Tugas Opsional (🆗) memberikan poin, tapi kurang efisien. Lakukan hanya jika kamu membidik peringkat Top 100 keseluruhan."
+        ]
+      },
+      "battleRules": {
+        "title": "Aturan Fase Pertempuran",
+        "rules": [
+          "Pertahankan Perisai Damai 24 jam setiap saat kecuali kamu aktif berpartisipasi dalam serbu untuk Kastil Matahari atau menara.",
+          "Jangan kumpulkan sumber daya di negara musuh. Pemain musuh akan memburu pengumpul untuk poin pembunuhan mudah.",
+          "Ikuti arahan target dari R5/R4. Jangan memulai serangan solo acak. Bergabunglah dalam serbu terkoordinasi untuk mengamankan tujuan.",
+          "Sembuhkan secara bertahap. Selama pertempuran sengit, sembuhkan pasukanmu dalam kelompok kecil (30-60 mnt) untuk menggunakan bantuan aliansi dan menghemat speedup."
+        ]
+      },
+      "matrix": {
+        "title": "Matriks Peningkatan",
+        "desc": "Distribusi poin harian untuk efisiensi maksimum.",
+        "focus": "Fokus",
+        "optional": "Opsional",
+        "headers": {
+          "category": "Kategori",
+          "d1": "Hari 1",
+          "d2": "Hari 2",
+          "d3": "Hari 3",
+          "d4": "Hari 4",
+          "d5": "Hari 5"
+        },
+        "tasks": {
+          "fc": "Kristal Api (KA)",
+          "construction": "Konstruksi",
+          "research": "Riset / Fajar",
+          "sigils": "Sigil",
+          "fcShards": "Pecahan KA",
+          "gather": "Kumpulkan Sumber Daya",
+          "wheel": "Roda Keberuntungan",
+          "heroShards": "Pecahan Pahlawan",
+          "beasts": "Teror / Binatang",
+          "troops": "Latih Pasukan",
+          "charms": "Jimat",
+          "widgets": "Widget / Esensi",
+          "heroGears": "Perlengkapan Pahlawan",
+          "chiefGear": "Perlengkapan Kepala",
+          "pets": "Hewan Peliharaan (Kemajuan/Penyempurnaan)"
+        }
+      }
+    },
+    "notFound": {
+      "title": "404",
+      "subtitle": "Tunggu... Unicorn di Tundra?",
+      "desc": "Kamu telah mengembara terlalu jauh ke dalam badai salju, Kepala. Koordinatnya salah, tidak ada sumber daya di sini, dan hipotermia mungkin membuatmu berhalusinasi.",
+      "button": "Kembali ke Markas"
+    },
+    "labyrinth": {
+      "tag": "World of Soldiers · Event",
+      "title": "Labirin",
+      "standardLevels": {
+        "title": "Level Standar — Rasio",
+        "orLabel": "atau",
+        "levels": [
+          {
+            "name": "Gua Monster",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "30% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Tambang Batu Bercahaya",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "50% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Laboratorium Bumi",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "60% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "Tempaan Gelap",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "45% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "40% Inf",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% Tom",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "40% Pan",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "marchLevels": {
+        "title": "Tanah Para Pemberani & Hati Gaia",
+        "description": "Kedua level ini mengizinkan hingga 3 pawai. Ikuti urutan ini untuk hasil yang jauh lebih baik.",
+        "marches": [
+          {
+            "number": 1,
+            "label": "Pawai pertama",
+            "heroes": "Infanteri Terbaik + Tombak Terbaik + Greg (tanpa perlengkapan)",
+            "badgeClass": "bg-violet-200 dark:bg-violet-500/20 text-violet-700 dark:text-violet-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "60% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "40% Tom",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "0% Pan",
+                "class": "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "label": "Pawai kedua",
+            "heroes": "Infanteri ke-2 + Mia (tanpa perlengkapan) + Pemanah Terbaik",
+            "badgeClass": "bg-emerald-200 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "54% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "3% Tom",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "43% Pan",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "label": "Pawai ketiga",
+            "heroes": "Sisa pahlawan terbaik",
+            "badgeClass": "bg-amber-200 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "50% Inf",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "20% Tom",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "30% Pan",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "title": "Tips Penting",
+        "desc": "Catatan strategi untuk Labirin",
+        "list": [
+          {
+            "title": "Tanpa perlengkapan pada Greg & Mia",
+            "desc": "Kirim Greg dan Mia tanpa perlengkapan apapun pada pawai masing-masing."
+          },
+          {
+            "title": "Urutan pawai itu penting",
+            "desc": "Untuk level 3 pawai, selalu isi pawai dalam urutan 1 → 2 → 3 untuk efisiensi maksimum."
+          },
+          {
+            "title": "Pahlawan terbaik terlebih dahulu",
+            "desc": "Selalu tugaskan pahlawan Infanteri dan Tombak terkuatmu ke pawai pertama."
+          },
+          {
+            "title": "Banyak rasio",
+            "desc": "Ketika dua atau lebih rasio tercantum, pilih berdasarkan pasukan yang kamu miliki."
+          }
+        ]
+      }
+    },
+    "diceChampionship": {
+      "tag": "Bracket Turnamen",
+      "title": "Kejuaraan Dadu",
+      "dateLabel": "Tanggal",
+      "podiumTitle": "Podium",
+      "bracketTitle": "Bracket Turnamen",
+      "standingsTitle": "Klasemen",
+      "howItWorksTitle": "Bagaimana cara kerjanya?",
+      "rules": [
+        "Pemenang mendapatkan rasa hormat dan hak untuk mengganti nama yang kalah.",
+        "Semua skor diperbarui secara manual oleh pimpinan aliansi.",
+        "Tie-break menentukan juara sebenarnya."
+      ],
+      "prizesTitle": "Hadiah & Konsekuensi",
+      "prizes": {
+        "first": "Pemenang mendapatkan HORMAT dan dapat mengganti nama yang kalah",
+        "second": "Finalis menerima jabat tangan yang kuat",
+        "third": "Semifinalis mendapatkan kursi baris depan untuk turnamen berikutnya"
+      },
+      "champion": "Juara",
+      "finalist": "Finalis",
+      "semifinalist": "Semifinalis",
+      "losersTitle": "Aula Rasa Malu",
+      "losersSubtitle": "Mereka punya hal yang lebih baik untuk dilakukan... rupanya",
+      "table": {
+        "rank": "#",
+        "player": "Pemain",
+        "matches": "Pertandingan",
+        "wins": "Menang",
+        "losses": "Kalah",
+        "tiebreaks": "Tie-Break Menang"
+      }
+    }
+  }
+}

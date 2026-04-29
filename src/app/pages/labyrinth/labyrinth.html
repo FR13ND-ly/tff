@@ -1,0 +1,130 @@
+
+<div class="w-full flex flex-col gap-10 pb-12 animate-fade-in">
+
+  <div class="relative w-full h-[280px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 dark:border-slate-800/80 bg-slate-900">
+    <div class="absolute inset-0 bg-[url('/labyrinth.jpg')] bg-cover bg-center opacity-60"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-slate-900/80"></div>
+
+    <div class="absolute bottom-0 left-0 w-full p-8 md:p-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div class="flex flex-col gap-2">
+        <span class="text-violet-400 font-bold tracking-widest text-sm uppercase">{{ pack().labyrinth.tag }}</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight drop-shadow-lg">
+          {{ pack().labyrinth.title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 w-full">
+
+    <!-- LEFT: Standard Levels -->
+    <div class="flex flex-col gap-6">
+      <div class="p-8 bg-white dark:bg-[#111318] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm h-full relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-violet-500/5 rounded-bl-[100px] pointer-events-none"></div>
+
+        <div class="flex items-center gap-3 mb-6">
+          <div class="p-2 bg-violet-500/10 dark:bg-violet-500/20 rounded-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-violet-600 dark:text-violet-400">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white">{{ pack().labyrinth.standardLevels.title }}</h2>
+        </div>
+
+        <ul class="space-y-4 relative z-10">
+          @for (level of pack().labyrinth.standardLevels.levels; track level.name; let i = $index) {
+            <li class="flex flex-col gap-2 p-4 rounded-2xl border bg-slate-50 dark:bg-[#1a1d24] border-slate-100 dark:border-slate-800/50">
+              <span class="font-bold text-slate-800 dark:text-slate-200 text-sm">{{ level.name }}</span>
+              <div class="flex flex-wrap gap-2">
+                @for (ratio of level.ratios; track ratio; let r = $index) {
+                  @if (r > 0) {
+                    <span class="text-slate-400 dark:text-slate-500 text-xs font-semibold self-center">{{ pack().labyrinth.standardLevels.orLabel }}</span>
+                  }
+                  <div class="flex items-center gap-1">
+                    @for (part of ratio; track part.type) {
+                      <span [class]="'text-xs font-bold px-2 py-0.5 rounded-full ' + part.class">{{ part.value }}</span>
+                    }
+                  </div>
+                }
+              </div>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+
+    <!-- RIGHT: 3-March Levels -->
+    <div class="flex flex-col gap-6">
+      <div class="p-8 bg-white dark:bg-[#111318] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm h-full relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-bl-[100px] pointer-events-none"></div>
+
+        <div class="flex items-center gap-3 mb-2">
+          <div class="p-2 bg-amber-500/10 dark:bg-amber-500/20 rounded-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-amber-600 dark:text-amber-400">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white">{{ pack().labyrinth.marchLevels.title }}</h2>
+        </div>
+
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 ml-1">{{ pack().labyrinth.marchLevels.description }}</p>
+
+        <div class="flex flex-col gap-4 relative z-10">
+          @for (march of pack().labyrinth.marchLevels.marches; track march.number) {
+            <div class="flex flex-col p-5 bg-slate-50 dark:bg-[#1a1d24] border border-slate-200 dark:border-slate-700/50 rounded-2xl relative overflow-hidden group hover:border-amber-500/30 transition-colors">
+
+              <div class="flex items-center gap-3 mb-3">
+                <span [class]="'flex items-center justify-center w-7 h-7 rounded-full text-sm font-black shrink-0 ' + march.badgeClass">
+                  {{ march.number }}
+                </span>
+                <div>
+                  <h3 class="text-base font-black text-slate-900 dark:text-white leading-none">{{ march.label }}</h3>
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{{ march.heroes }}</p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                @for (part of march.ratio; track part.type) {
+                  <span [class]="'text-xs font-bold px-2 py-0.5 rounded-full ' + part.class">{{ part.value }}</span>
+                }
+              </div>
+
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIPS -->
+  <div class="w-full p-8 md:p-10 bg-slate-900 rounded-3xl shadow-lg border border-slate-800 flex flex-col md:flex-row gap-8 items-center md:items-start relative overflow-hidden mt-2">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-violet-600/10 blur-[120px] pointer-events-none"></div>
+
+    <div class="flex-shrink-0 relative z-10 flex flex-col items-center text-center md:text-left md:items-start">
+      <div class="w-16 h-16 bg-violet-500/20 text-violet-400 rounded-2xl flex items-center justify-center mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.82 1.508-2.316a7.5 7.5 0 1 0-7.516 0c.85.496 1.508 1.333 1.508 2.316V18" />
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold text-white mb-2">{{ pack().labyrinth.tips.title }}</h3>
+      <p class="text-slate-400 text-sm max-w-[200px]">{{ pack().labyrinth.tips.desc }}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow relative z-10">
+      @for (tip of pack().labyrinth.tips.list; track tip.title) {
+        <div class="flex gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-violet-400 shrink-0 mt-0.5">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+          </svg>
+          <p class="text-slate-300 text-sm leading-relaxed font-medium">
+            <strong class="text-white block mb-1">{{ tip.title }}:</strong>
+            {{ tip.desc }}
+          </p>
+        </div>
+      }
+    </div>
+  </div>
+
+</div>

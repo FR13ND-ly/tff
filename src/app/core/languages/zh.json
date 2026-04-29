@@ -1,0 +1,522 @@
+{
+  "name": "ZH",
+  "imageUrl": "",
+  "pack": {
+    "header": {
+      "bearTrap": "捕熊陷阱",
+      "crazyJoe": "疯狂乔",
+      "svs": "SvS",
+      "labyrinth": "迷宫",
+      "diceChampionship": "骰子锦标赛"
+    },
+    "footer": {
+      "questions": "如果您有任何问题、想法或建议，请联系",
+      "copyright": "© 2026 TFF 联盟 • 州 2327 • 白夜极光"
+    },
+    "landing": {
+      "title": "欢迎来到我们的伟大联盟！",
+      "discord": "加入我们的 Discord",
+      "events": {
+        "bearTrap": "捕熊陷阱",
+        "crazyJoe": "疯狂乔",
+        "svs": "州战",
+        "mercenaryBoss": "佣兵首领",
+        "foundry": "铸造厂",
+        "canyonClash": "峡谷冲突"
+      },
+      "labels": {
+        "legion1": "第一军团",
+        "legion2": "第二军团",
+        "biWeekly": "每两周",
+        "tba": "待定"
+      }
+    },
+    "bearTrap": {
+      "tag": "活动指南",
+      "title": "捕熊陷阱",
+      "sessions": {
+        "s1Title": "第一场",
+        "s1Time": "01:00",
+        "s2Title": "第二场",
+        "s2Time": "18:00",
+        "utc": "UTC"
+      },
+      "mechanics": {
+        "title": "机制说明",
+        "p1_1": "每位英雄都拥有特殊技能，可为整个集结提供增益。但是，",
+        "p1_bold": "只有第一位英雄（队长）的技能",
+        "p1_2": "会应用于集结。",
+        "p2": "另外两位英雄不会贡献他们的集结技能，因此请仅根据部队容量或被动属性来选择他们。"
+      },
+      "join": {
+        "titlePart1": "队长（",
+        "titleHighlight": "加入",
+        "desc": "加入现有集结时最佳伤害和 lethality 增益。优先级从左到右。",
+        "noHeroes1": "如果没有这些英雄可用，请",
+        "noHeroesBold": "不派遣任何英雄",
+        "noHeroes2": "直接派兵。"
+      },
+      "start": {
+        "titlePart1": "队长（",
+        "titleHighlight": "发起",
+        "desc": "如果您要发起对熊的集结，请使用这些英雄作为队长。"
+      },
+      "tips": {
+        "title": "策略与技巧",
+        "desc": "高效地最大化您的积分和奖励。",
+        "list": [
+          {
+            "title": "部队比例",
+            "desc": "熊不会杀死部队。派遣以伤害为主的阵型：10% 步兵，10% 枪兵，80% 射手。"
+          },
+          {
+            "title": "集结时间",
+            "desc": "始终将集结时间设置为 5 分钟，以最大化您团队的攻击次数。"
+          },
+          {
+            "title": "自动加入",
+            "desc": "如果您在线，请关闭自动加入。手动加入可确保您派遣正确的队长英雄。"
+          },
+          {
+            "title": "领地增益",
+            "desc": "确保您的城市位于联盟领地内，以享受我们的联盟科技加成。"
+          }
+        ]
+      }
+    },
+    "crazyJoe": {
+      "tag": "防守活动",
+      "title": "疯狂乔",
+      "startsAt": "开始于",
+      "tba": "待定",
+      "generalRules": {
+        "title": "通用规则",
+        "rules": [
+          "首先派遣您所有的步兵部队去增援在线的联盟成员。",
+          "步兵用完后，派遣其他类型的部队（枪兵和射手）去增援。",
+          "分散防守：不要向已有超过 25 万增援部队的城市派遣援军。",
+          "永远不要使用和平护盾！疯狂乔无视护盾。",
+          "将您最好的防守英雄放在您自己城市的城防墙上。"
+        ]
+      },
+      "hqDefense": {
+        "title": "总部防守具体规则",
+        "labels": {
+          "maxTroops": "最大部队",
+          "ratio": "比例",
+          "captains": "所需队长"
+        },
+        "waves": [
+          {
+            "wave": "第 10 波（总部防守）",
+            "description": "第 9 波之后，召回您的部队，并将您最强的行军派往总部。专注于高生命值的步兵来吸收和消灭这一波。",
+            "maxTroops": "10万",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> 步兵 <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> 枪兵"
+          },
+          {
+            "wave": "第 20 波（总部最终防守）",
+            "description": "第 19 波之后，再次召回部队并冲向总部。相同的防守优先级 —— 步兵优先。您最强的成员应领导驻军。",
+            "maxTroops": "10万",
+            "ratioHtml": "<span class=\"text-emerald-500\">90%</span> 步兵 <span class=\"text-slate-400 mx-1\">/</span> <span class=\"text-blue-500\">10%</span> 枪兵"
+          }
+        ]
+      },
+      "tips": {
+        "title": "专业策略",
+        "desc": "提升排名的进阶技巧。",
+        "list": [
+          {
+            "title": "无永久损失",
+            "desc": "被疯狂乔击败的部队只会进入医院。没有永久性损失。"
+          },
+          {
+            "title": "最大化积分",
+            "desc": "您通过防守自己的城市以及防守盟友获得积分。增援他人是进入排行榜前列的秘诀。"
+          },
+          {
+            "title": "城市燃烧",
+            "desc": "如果您防守失败两次，您的城市将燃烧，乔在剩余活动中将忽略您。如果发生这种情况，请派遣所有部队去增援他人！"
+          },
+          {
+            "title": "空城诱饵",
+            "desc": "高级玩家通常会完全清空他们的城市，以在其他地方最大化增援积分。"
+          }
+        ]
+      }
+    },
+    "svs": {
+      "tag": "跨服活动",
+      "title": "州战",
+      "durationLabel": "时长",
+      "durationValue": "6 天",
+      "prepRules": {
+        "title": "准备阶段规则",
+        "rules": [
+          "囤积是黄金法则。将火晶、加速器和元件专门保留在它们指定的日子里使用。",
+          "时机决定一切。仔细检查服务器重置时间。哪怕早一分钟使用物品也意味着零分。",
+          "始终瞄准每日最后一个里程碑以获得个人奖励，但一旦达到就停止消耗，为下一次 SvS 节省资源。",
+          "可选任务 (🆗) 提供积分，但效率较低。只有当您瞄准总排名前 100 时才去做它们。"
+        ]
+      },
+      "battleRules": {
+        "title": "战斗阶段规则",
+        "rules": [
+          "时刻保持 24 小时和平护盾，除非您积极参与攻打太阳城或塔楼的集结。",
+          "不要在敌方州采集资源。敌方玩家会猎杀采集者以获取轻松的击杀积分。",
+          "遵循 R5/R4 的目标指令。不要发动随机的单人攻击。加入协调的集结以确保目标。",
+          "分批治疗。在激烈战斗中，分批（30-60 分钟）治疗您的部队，以利用联盟帮助并节省加速器。"
+        ]
+      },
+      "matrix": {
+        "title": "升级矩阵",
+        "desc": "每日积分分配以实现最高效率。",
+        "focus": "重点",
+        "optional": "可选",
+        "headers": {
+          "category": "类别",
+          "d1": "第 1 天",
+          "d2": "第 2 天",
+          "d3": "第 3 天",
+          "d4": "第 4 天",
+          "d5": "第 5 天"
+        },
+        "tasks": {
+          "fc": "火晶",
+          "construction": "建造",
+          "research": "研究 / 黎明",
+          "sigils": "纹章",
+          "fcShards": "火晶碎片",
+          "gather": "采集资源",
+          "wheel": "幸运轮盘",
+          "heroShards": "英雄碎片",
+          "beasts": "恐怖 / 巨兽",
+          "troops": "训练部队",
+          "charms": "护符",
+          "widgets": "元件 / 精华",
+          "heroGears": "英雄装备",
+          "chiefGear": "首领装备",
+          "pets": "宠物（升级/精炼）"
+        }
+      }
+    },
+    "notFound": {
+      "title": "404",
+      "subtitle": "等等……冻土上的独角兽？",
+      "desc": "首领，您在暴风雪中走得太远了。坐标错误，这里没有资源，而且体温过低可能让您产生了幻觉。",
+      "button": "返回总部"
+    },
+    "labyrinth": {
+      "tag": "World of Soldiers · 活动",
+      "title": "迷宫",
+      "standardLevels": {
+        "title": "标准关卡 — 比例",
+        "orLabel": "或",
+        "levels": [
+          {
+            "name": "怪物洞穴",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "55% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "30% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "萤石矿",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "50% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "地球实验室",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "65% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "60% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "15% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "25% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          },
+          {
+            "name": "黑暗熔炉",
+            "ratios": [
+              [
+                {
+                  "type": "inf",
+                  "value": "55% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "10% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "45% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "35% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ],
+              [
+                {
+                  "type": "inf",
+                  "value": "40% 步兵",
+                  "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+                },
+                {
+                  "type": "lnc",
+                  "value": "20% 枪兵",
+                  "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+                },
+                {
+                  "type": "mrk",
+                  "value": "40% 射手",
+                  "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      "marchLevels": {
+        "title": "勇者之地 & 盖亚之心",
+        "description": "这两个关卡允许最多 3 支行军。遵循此顺序可获得更好的结果。",
+        "marches": [
+          {
+            "number": 1,
+            "label": "第一行军",
+            "heroes": "最佳步兵 + 最佳枪兵 + 格雷格（无装备）",
+            "badgeClass": "bg-violet-200 dark:bg-violet-500/20 text-violet-700 dark:text-violet-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "60% 步兵",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "40% 枪兵",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "0% 射手",
+                "class": "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "label": "第二行军",
+            "heroes": "第二步兵 + 米娅（无装备）+ 最佳射手",
+            "badgeClass": "bg-emerald-200 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "54% 步兵",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "3% 枪兵",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "43% 射手",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "label": "第三行军",
+            "heroes": "剩余的最佳英雄",
+            "badgeClass": "bg-amber-200 dark:bg-amber-500/20 text-amber-700 dark:text-amber-400",
+            "ratio": [
+              {
+                "type": "inf",
+                "value": "50% 步兵",
+                "class": "bg-violet-100 dark:bg-violet-500/20 text-violet-700 dark:text-violet-300"
+              },
+              {
+                "type": "lnc",
+                "value": "20% 枪兵",
+                "class": "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300"
+              },
+              {
+                "type": "mrk",
+                "value": "30% 射手",
+                "class": "bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300"
+              }
+            ]
+          }
+        ]
+      },
+      "tips": {
+        "title": "关键技巧",
+        "desc": "迷宫策略说明",
+        "list": [
+          {
+            "title": "格雷格和米娅不带装备",
+            "desc": "在各自的行军中，派遣格雷格和米娅时不带任何装备。"
+          },
+          {
+            "title": "行军顺序很重要",
+            "desc": "对于 3 支行军的关卡，始终按 1 → 2 → 3 的顺序填充行军，以实现最高效率。"
+          },
+          {
+            "title": "最佳英雄优先",
+            "desc": "始终将您最强的步兵和枪兵英雄分配给第一行军。"
+          },
+          {
+            "title": "多种比例",
+            "desc": "当列出两种或更多种比例时，根据您可用的部队进行选择。"
+          }
+        ]
+      }
+    },
+    "diceChampionship": {
+      "tag": "锦标赛对阵图",
+      "title": "骰子锦标赛",
+      "dateLabel": "日期",
+      "podiumTitle": "领奖台",
+      "bracketTitle": "锦标赛对阵图",
+      "standingsTitle": "排名",
+      "howItWorksTitle": "如何运作？",
+      "rules": [
+        "胜者赢得尊重并有权给败者改名。",
+        "所有分数由联盟管理层手动更新。",
+        "平分决胜制决定真正的冠军。"
+      ],
+      "prizesTitle": "奖品与后果",
+      "prizes": {
+        "first": "胜者赢得尊重并可给败者改名",
+        "second": "亚军获得坚定的握手",
+        "third": "半决赛选手获得下一届锦标赛的前排座位"
+      },
+      "champion": "冠军",
+      "finalist": "亚军",
+      "semifinalist": "半决赛选手",
+      "losersTitle": "耻辱堂",
+      "losersSubtitle": "他们有更好的事情要做……显然",
+      "table": {
+        "rank": "#",
+        "player": "玩家",
+        "matches": "比赛场次",
+        "wins": "胜场",
+        "losses": "负场",
+        "tiebreaks": "赢得平分决胜"
+      }
+    }
+  }
+}
