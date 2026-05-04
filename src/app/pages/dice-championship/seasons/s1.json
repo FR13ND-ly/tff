@@ -36,8 +36,9 @@
     { "id": "solid_snake", "name": "Solid Snake", "avatar": "/heroes/jeronimo.png" },
     { "id": "tiny_chai", "name": "Tiny Chai", "avatar": "/heroes/jeronimo.png" }
   ],
-  "championId": "bs",
+  "championId": "arte",
   "losers": [
+    { "playerId": "fr13nd", "excuse": "Busy with beer during tournament" },
     { "playerId": "shadow", "excuse": "Had to walk the bear" },
     { "playerId": "ladyblaze", "excuse": "Dice looked too pointy" },
     { "playerId": "zzz", "excuse": "Fell asleep mid-match" },
@@ -47,18 +48,19 @@
   ],
   "rounds": [
     {
-        "title": "Round 1",
-        "isFinished": false,
+        "title": "Semi-Finals",
+        "isFinished": true,
         "matches": [
-            { "id": "r1_m1", "player1Id": "thorn", "player2Id": "denirox",     "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m2", "player1Id": "chief_kl",    "player2Id": "arte",        "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m3", "player1Id": "abo_tarek",   "player2Id": "pieroticus",  "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m4", "player1Id": "josepito",    "player2Id": "cheryl",      "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m5", "player1Id": "fr13nd",      "player2Id": "yvesdure01",  "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m6", "player1Id": "dupka",       "player2Id": "pierotik",    "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m7", "player1Id": "spanish_mafia","player2Id": "butterfly",   "player1Wins": 0, "player2Wins": 0 },
-            { "id": "r1_m8", "player1Id": "bbq_2",       "player2Id": "subzero",     "player1Wins": 0, "player2Wins": 0 }
+            { "id": "r1_m1", "player1Id": "arte", "player2Id": "thorn", "player1Wins": 5, "player2Wins": 2 },
+            { "id": "r1_m2", "player1Id": "fr13nd",    "player2Id": "cheryl",        "player1Wins": 5, "player2Wins": 1 }
         ]
+    },
+    {
+      "title": "Finals",
+      "isFinished": true,
+      "matches": [
+        { "id": "r2_m1", "player1Id": "arte", "player2Id": "fr13nd", "player1Wins": 8, "player2Wins": 1 }
+      ]
     }
   ]
 }
